@@ -1064,6 +1064,23 @@ static void LoadCopyrightGraphics(u16 tilesetAddress, u16 tilemapAddress, u16 pa
     LoadPalette(gIntroCopyright_Pal, paletteOffset, PLTT_SIZE_4BPP);
 }
 
+// Translation: credit screen shown after the copyright one
+#define TRANSLATION_SCREEN_FRAMES 150
+static u8 sTranslationScreenTimer;
+
+static void LoadTranslationGraphics(void)
+{
+    LZ77UnCompVram(gIntroTranslation_Gfx, (void *)(VRAM + 0x8000));
+    LZ77UnCompVram(gIntroTranslation_Tilemap, (void *)(VRAM + 0x3800));
+    LoadPalette(gIntroTranslation_Pal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
+    BlendPalettes(PALETTES_ALL, 16, RGB_BLACK);
+    SetGpuReg(REG_OFFSET_BG0CNT, BGCNT_PRIORITY(0)
+                               | BGCNT_CHARBASE(2)
+                               | BGCNT_SCREENBASE(7)
+                               | BGCNT_16COLOR
+                               | BGCNT_TXT256x256);
+}
+
 static void SerialCB_CopyrightScreen(void)
 {
     GameCubeMultiBoot_HandleSerialInterrupt(&gMultibootProgramStruct);
@@ -1120,6 +1137,25 @@ static u8 SetUpCopyrightScreen(void)
         }
         break;
     case 141:
+        GameCubeMultiBoot_Main(&gMultibootProgramStruct);
+        if (UpdatePaletteFade())
+            break;
+        LoadTranslationGraphics();
+        BeginNormalPaletteFade(PALETTES_ALL, 1, 16, 0, RGB_BLACK);
+        sTranslationScreenTimer = TRANSLATION_SCREEN_FRAMES;
+        gMain.state++;
+        break;
+    case 142:
+        GameCubeMultiBoot_Main(&gMultibootProgramStruct);
+        if (UpdatePaletteFade())
+            break;
+        if (--sTranslationScreenTimer == 0)
+        {
+            BeginNormalPaletteFade(PALETTES_ALL, 1, 0, 16, RGB_BLACK);
+            gMain.state++;
+        }
+        break;
+    case 143:
         if (UpdatePaletteFade())
             break;
 #if EXPANSION_INTRO == TRUE
