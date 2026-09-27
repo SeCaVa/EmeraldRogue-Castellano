@@ -4,7 +4,7 @@
     ],
     "defaults":
     {
-        "display_group": "Misc",
+        "display_group": "Misc", "display_group_name": "Varios",
         "source_map": "ROGUE_TEMPLATE_HOMES"
     },
     "decorations":
@@ -12,7 +12,7 @@
         "exterior_patches":
         [
             {
-                "name": "Remove Decor",
+                "name": "Remove Decor", "display_name": "Quitar decoración",
                 "source_tiles":
                 {
                     "x": 0,

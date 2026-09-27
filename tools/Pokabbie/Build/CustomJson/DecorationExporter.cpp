@@ -14,6 +14,7 @@ struct DecorationVariant
 {
 	DecorationType type;
 	std::string name;
+	std::string displayName;
 	std::string sourceMap;
 	std::string layer = "DECOR_LAYER_DEFAULT";
 	struct
@@ -36,7 +37,9 @@ struct Decoration
 	std::string preprocessorCondition;
 	std::string uniqueId;
 	std::string name;
+	std::string displayName;
 	std::string displayGroup;
+	std::string displayGroupName;
 	std::vector<DecorationVariant> variants;
 };
 
@@ -67,10 +70,10 @@ void ExportDecorationData_C(std::ofstream& fileStream, std::string const& dataPa
 
 			std::sort(sortedDecorations.begin(), sortedDecorations.end(), [](Decoration const* a, Decoration const* b)
 				{
-					return a->uniqueId.compare(b->uniqueId) == -1;
+					return a->displayName.compare(b->displayName) < 0;
 				});
 
-			std::string prettyName = strutil::split(groupName, "#")[0];
+			std::string prettyName = sortedDecorations.front()->displayGroupName;
 
 			fileStream << "static u8 const sText_GroupName_" << FormatUniqueId(groupName) << "[] = _(\"" + prettyName + "\");\n";
 			fileStream << "static u16 const sText_Group_" << FormatUniqueId(groupName) << "[] =\n{\n";
@@ -130,7 +133,7 @@ void ExportDecorationData_C(std::ofstream& fileStream, std::string const& dataPa
 			{
 				fileStream << c_TabSpacing << "[DECOR_VARIANT_" << decor.uniqueId << "_" << FormatUniqueId(variant.name) << "] =\n";
 				fileStream << c_TabSpacing << "{\n";
-				fileStream << c_TabSpacing2 << ".name = sText_Str_" << decorData.uniqueStringLookup[variant.name] << ",\n";
+				fileStream << c_TabSpacing2 << ".name = sText_Str_" << decorData.uniqueStringLookup[variant.displayName] << ",\n";
 				fileStream << c_TabSpacing2 << ".srcMapGroup = MAP_GROUP(" << variant.sourceMap << "),\n";
 				fileStream << c_TabSpacing2 << ".srcMapNum = MAP_NUM(" << variant.sourceMap << "),\n";
 				fileStream << c_TabSpacing2 << ".layer = " << variant.layer << ",\n";
@@ -179,7 +182,7 @@ void ExportDecorationData_C(std::ofstream& fileStream, std::string const& dataPa
 
 			fileStream << c_TabSpacing << "[DECOR_ID_" << decor.uniqueId << "] =\n";
 			fileStream << c_TabSpacing << "{\n";
-			fileStream << c_TabSpacing2 << ".name = sText_Str_" << decorData.uniqueStringLookup[decor.name] << ",\n";
+			fileStream << c_TabSpacing2 << ".name = sText_Str_" << decorData.uniqueStringLookup[decor.displayName] << ",\n";
 
 			DecorationVariant const& firstVariant = decor.variants.front();
 			DecorationVariant const& lastVariant = decor.variants.back();
@@ -271,6 +274,7 @@ static DecorationVariant ParseDecorationVariant(json const& jsonData, Decoration
 	DecorationVariant outVariant = defaultValues;
 
 	outVariant.name = jsonData["name"].get<std::string>();
+	outVariant.displayName = jsonData.contains("display_name") ? jsonData["display_name"].get<std::string>() : outVariant.name;
 
 	if(jsonData.contains("source_map"))
 		outVariant.sourceMap = jsonData["source_map"].get<std::string>();
@@ -326,9 +330,12 @@ static Decoration ParseDecoration(std::string const& idPrefix, json const& jsonD
 	Decoration outDecor;
 	DecorationVariant defaultVariant = ParseDecorationVariant(jsonData, DecorationVariant());
 	defaultVariant.name = "Unnamed";
+	defaultVariant.displayName = defaultVariant.name;
 
 	outDecor.name = jsonData["name"].get<std::string>();
+	outDecor.displayName = jsonData.contains("display_name") ? jsonData["display_name"].get<std::string>() : outDecor.name;
 	outDecor.displayGroup = jsonData["display_group"].get<std::string>();
+	outDecor.displayGroupName = jsonData.contains("display_group_name") ? jsonData["display_group_name"].get<std::string>() : strutil::split(outDecor.displayGroup, "#")[0];
 
 	if (jsonData.contains("#if"))
 	{
@@ -349,6 +356,7 @@ static Decoration ParseDecoration(std::string const& idPrefix, json const& jsonD
 	else
 	{
 		defaultVariant.name = "Default";
+		defaultVariant.displayName = defaultVariant.name;
 		outDecor.variants.push_back(defaultVariant);
 	}
 
@@ -424,11 +432,11 @@ static void GatherDecorations(std::string const& dataPath, json const& rawJsonDa
 	// Register all the unique strings
 	for (auto const& decor : outDecorData.decorations)
 	{
-		ProcessUniqueString(outDecorData, decor.name);
+		ProcessUniqueString(outDecorData, decor.displayName);
 
 		for (auto const& variant : decor.variants)
 		{
-			ProcessUniqueString(outDecorData, variant.name);
+			ProcessUniqueString(outDecorData, variant.displayName);
 		}
 	}
 

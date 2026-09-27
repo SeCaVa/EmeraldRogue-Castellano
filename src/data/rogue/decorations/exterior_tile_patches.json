@@ -4,7 +4,7 @@
     ],
     "defaults":
     {
-        "display_group": "Environment",
+        "display_group": "Environment", "display_group_name": "Entorno",
         "source_map": "ROGUE_TEMPLATE_HOMES",
         "layer": "DECOR_LAYER_BACKGROUND",
         "source_tiles":
@@ -51,7 +51,7 @@
         "exterior_patches":
         [
             {
-                "name": "Path",
+                "name": "Path", "display_name": "Camino",
                 "source_tiles":
                 {
                     "x": 10,
@@ -59,7 +59,7 @@
                 }
             },
             {
-                "name": "Grass",
+                "name": "Grass", "display_name": "Hierba",
                 "source_tiles":
                 {
                     "x": 25,
@@ -67,7 +67,7 @@
                 }
             },
             {
-                "name": "Grass Patchy",
+                "name": "Grass Patchy", "display_name": "Hierba dispersa",
                 "source_tiles":
                 {
                     "x": 30,
@@ -75,7 +75,7 @@
                 }
             },
             {
-                "name": "Flowers",
+                "name": "Flowers", "display_name": "Flores",
                 "source_tiles":
                 {
                     "x": 15,
@@ -83,7 +83,7 @@
                 }
             },
             {
-                "name": "Flowers Patchy",
+                "name": "Flowers Patchy", "display_name": "Flores dispersas",
                 "source_tiles":
                 {
                     "x": 20,
@@ -91,7 +91,7 @@
                 }
             },
             {
-                "name": "Crops",
+                "name": "Crops", "display_name": "Cultivos",
                 "source_tiles":
                 {
                     "x": 35,
@@ -99,7 +99,7 @@
                 }
             },
             {
-                "name": "Mountain",
+                "name": "Mountain", "display_name": "Montaña",
                 "layer": "DECOR_LAYER_MOUNTAIN",
                 "source_tiles":
                 {
@@ -108,7 +108,7 @@
                 }
             },
             {
-                "name": "Pond",
+                "name": "Pond", "display_name": "Estanque",
                 "source_tiles":
                 {
                     "x": 0,
@@ -116,7 +116,7 @@
                 }
             },
             {
-                "name": "Tree",
+                "name": "Tree", "display_name": "Árbol",
                 "layer": "DECOR_LAYER_SOLID_TILE",
                 "source_tiles":
                 {

@@ -682,7 +682,7 @@ script Rogue_Area_AdventureEntrance_MeetPokabbie
     closemessage
     delay(30)
 
-    msgbox(format("{PLAYER}!"))
+    msgbox(format("¡{PLAYER}!"))
     closemessage
 
     turnobject(OBJ_EVENT_ID_PLAYER, DIR_SOUTH)

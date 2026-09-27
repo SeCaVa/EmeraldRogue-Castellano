@@ -391,7 +391,7 @@ static u8 const sText_Todo[] = _("Pendiente");
 static u8 const sText_Complete[] = _("Completa");
 static u8 const sText_Back[] = _("Atrás");
 static u8 const sText_Progress[] = _("Progreso");
-static u8 const sText_AButtonPin[] = _("{COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}{A_BUTTON} Fijar  {SELECT_BUTTON} Ordenar");
+static u8 const sText_AButtonPin[] = _("{COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}{A_BUTTON} Fijar {SELECT_BUTTON} Orden");
 
 static u8 const sText_MarkerInProgress[] = _("{COLOR BLUE}·En curso·");
 static u8 const sText_MarkerInactive[] = _("{COLOR RED}·Inactiva·");
@@ -2162,8 +2162,8 @@ static void Draw_MasteryTrackerPage()
         AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 4, 131, 0, 0, color, TEXT_SKIP_DRAW, gStringVar4);
     }
 
-    AddTextPrinterParameterized4(WIN_LEFT_PAGE, FONT_SMALL_NARROW, 0, 131, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageLeft);
-    AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 57, 131, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageRight);
+    AddTextPrinterParameterized4(WIN_LEFT_PAGE, FONT_SMALL_NARROW, 0, 129, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageLeft);
+    AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 57, 129, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageRight);
 
     PutWindowTilemap(WIN_LEFT_PAGE);
     PutWindowTilemap(WIN_RIGHT_PAGE);
@@ -2409,8 +2409,8 @@ static void Draw_PlayerStatsPage()
         AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 4, 131, 0, 0, color, TEXT_SKIP_DRAW, gStringVar4);
     }
 
-    AddTextPrinterParameterized4(WIN_LEFT_PAGE, FONT_SMALL_NARROW, 0, 131, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageLeft);
-    AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 57, 131, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageRight);
+    AddTextPrinterParameterized4(WIN_LEFT_PAGE, FONT_SMALL_NARROW, 0, 129, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageLeft);
+    AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 57, 129, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageRight);
 
     PutWindowTilemap(WIN_LEFT_PAGE);
     PutWindowTilemap(WIN_RIGHT_PAGE);

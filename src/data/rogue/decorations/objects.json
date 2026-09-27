@@ -4,7 +4,7 @@
     ],
     "defaults":
     {
-        "display_group": "Objects",
+        "display_group": "Objects", "display_group_name": "Objetos",
         "source_map": "ROGUE_TEMPLATE_HOMES",
         "layer": "DECOR_LAYER_OBJECTS"
     },
@@ -13,14 +13,14 @@
         "objects":
         [
             {
-                "name": "Statue",
+                "name": "Statue", "display_name": "Estatua",
                 "source_object":
                 {
                     "local_id": 1
                 }
             },
             {
-                "name": "Quest Board",
+                "name": "Quest Board", "display_name": "Tablón de misiones",
                 "source_object":
                 {
                     "local_id": 4
@@ -34,14 +34,14 @@
                 }
             },
             {
-                "name": "Bed",
+                "name": "Bed", "display_name": "Cama",
                 "source_object":
                 {
                     "local_id": 6
                 }
             },
             {
-                "name": "Outfit Changing",
+                "name": "Outfit Changing", "display_name": "Vestuario",
                 "source_object":
                 {
                     "local_id": 8
@@ -49,14 +49,14 @@
                 "variants":
                 [
                     {
-                        "name": "Wardrobe",
+                        "name": "Wardrobe", "display_name": "Armario",
                         "source_object":
                         {
                             "local_id": 8
                         }
                     },
                     {
-                        "name": "Drawers",
+                        "name": "Drawers", "display_name": "Cómoda",
                         "source_object":
                         {
                             "local_id": 7
@@ -65,14 +65,14 @@
                 ]
             },
             {
-                "name": "Flag",
+                "name": "Flag", "display_name": "Bandera",
                 "source_object":
                 {
                     "local_id": 5
                 }
             },
             {
-                "name": "PC wandering {PKMN}",
+                "name": "PC wandering {PKMN}", "display_name": "{PKMN} del PC",
                 "source_object":
                 {
                     "local_id": 14,
@@ -82,7 +82,7 @@
             },
 
             {
-                "name": "Appliances",
+                "name": "Appliances", "display_name": "Electrodomésticos",
                 "source_object":
                 {
                     "local_id": 9
@@ -90,35 +90,35 @@
                 "variants":
                 [
                     {
-                        "name": "Fan",
+                        "name": "Fan", "display_name": "Ventilador",
                         "source_object":
                         {
                             "local_id": 9
                         }
                     },
                     {
-                        "name": "Fridge",
+                        "name": "Fridge", "display_name": "Nevera",
                         "source_object":
                         {
                             "local_id": 10
                         }
                     },
                     {
-                        "name": "Microwave",
+                        "name": "Microwave", "display_name": "Microondas",
                         "source_object":
                         {
                             "local_id": 11
                         }
                     },
                     {
-                        "name": "Lawn Mower",
+                        "name": "Lawn Mower", "display_name": "Cortacésped",
                         "source_object":
                         {
                             "local_id": 12
                         }
                     },
                     {
-                        "name": "Washing Machine",
+                        "name": "Washing Machine", "display_name": "Lavadora",
                         "source_object":
                         {
                             "local_id": 13
@@ -128,7 +128,7 @@
             },
 
             {
-                "name": "Cushions",
+                "name": "Cushions", "display_name": "Cojines",
                 "source_object":
                 {
                     "local_id": 15
@@ -143,28 +143,28 @@
                         }
                     },
                     {
-                        "name": "Diamond",
+                        "name": "Diamond", "display_name": "Diamante",
                         "source_object":
                         {
                             "local_id": 16
                         }
                     },
                     {
-                        "name": "Fire",
+                        "name": "Fire", "display_name": "Fuego",
                         "source_object":
                         {
                             "local_id": 17
                         }
                     },
                     {
-                        "name": "Grass",
+                        "name": "Grass", "display_name": "Planta",
                         "source_object":
                         {
                             "local_id": 18
                         }
                     },
                     {
-                        "name": "Kiss",
+                        "name": "Kiss", "display_name": "Beso",
                         "source_object":
                         {
                             "local_id": 19
@@ -178,21 +178,21 @@
                         }
                     },
                     {
-                        "name": "Round",
+                        "name": "Round", "display_name": "Redondo",
                         "source_object":
                         {
                             "local_id": 21
                         }
                     },
                     {
-                        "name": "Spin",
+                        "name": "Spin", "display_name": "Espiral",
                         "source_object":
                         {
                             "local_id": 22
                         }
                     },
                     {
-                        "name": "Water",
+                        "name": "Water", "display_name": "Agua",
                         "source_object":
                         {
                             "local_id": 23
@@ -208,7 +208,7 @@
                 ]
             },
             {
-                "name": "Doll",
+                "name": "Doll", "display_name": "Muñeco",
                 "source_object":
                 {
                     "local_id": 25

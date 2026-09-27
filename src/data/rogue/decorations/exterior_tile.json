@@ -4,7 +4,7 @@
     ],
     "defaults":
     {
-        "display_group": "Tiles#Exterior",
+        "display_group": "Tiles#Exterior", "display_group_name": "Elementos",
         "source_map": "ROGUE_TEMPLATE_HOMES"
     },
     "decorations":
@@ -12,7 +12,7 @@
         "tiles_exterior":
         [
             {
-                "name": "Boulder",
+                "name": "Boulder", "display_name": "Roca",
                 "source_tiles":
                 {
                     "x": 2,
@@ -20,7 +20,7 @@
                 }
             },
             {
-                "name": "Bush",
+                "name": "Bush", "display_name": "Arbusto",
                 "source_tiles":
                 {
                     "x": 3,
@@ -28,7 +28,7 @@
                 }
             },
             {
-                "name": "Wood Sign",
+                "name": "Wood Sign", "display_name": "Cartel de madera",
                 "source_tiles":
                 {
                     "x": 0,
@@ -36,7 +36,7 @@
                 }
             },
             {
-                "name": "Fancy Sign",
+                "name": "Fancy Sign", "display_name": "Cartel elegante",
                 "source_tiles":
                 {
                     "x": 1,
@@ -44,7 +44,7 @@
                 }
             },
             {
-                "name": "Horizontal Fence",
+                "name": "Horizontal Fence", "display_name": "Valla horizontal",
                 "source_tiles":
                 {
                     "width": 1,
@@ -91,7 +91,7 @@
                 ]
             },
             {
-                "name": "Vertical Fence",
+                "name": "Vertical Fence", "display_name": "Valla vertical",
                 "source_tiles":
                 {
                     "width": 1,
@@ -100,7 +100,7 @@
                 "variants":
                 [
                     {
-                        "name": "Left 1x5",
+                        "name": "Left 1x5", "display_name": "Izq. 1x5",
                         "source_tiles":
                         {
                             "x": 5,
@@ -109,7 +109,7 @@
                         }
                     },
                     {
-                        "name": "Left 1x4",
+                        "name": "Left 1x4", "display_name": "Izq. 1x4",
                         "source_tiles":
                         {
                             "x": 6,
@@ -118,7 +118,7 @@
                         }
                     },
                     {
-                        "name": "Left 1x3",
+                        "name": "Left 1x3", "display_name": "Izq. 1x3",
                         "source_tiles":
                         {
                             "x": 7,
@@ -127,7 +127,7 @@
                         }
                     },
                     {
-                        "name": "Left 1x2",
+                        "name": "Left 1x2", "display_name": "Izq. 1x2",
                         "source_tiles":
                         {
                             "x": 8,
@@ -137,7 +137,7 @@
                     },
 
                     {
-                        "name": "Right 1x5",
+                        "name": "Right 1x5", "display_name": "Dcha. 1x5",
                         "source_tiles":
                         {
                             "x": 10,
@@ -146,7 +146,7 @@
                         }
                     },
                     {
-                        "name": "Right 1x4",
+                        "name": "Right 1x4", "display_name": "Dcha. 1x4",
                         "source_tiles":
                         {
                             "x": 11,
@@ -155,7 +155,7 @@
                         }
                     },
                     {
-                        "name": "Right 1x3",
+                        "name": "Right 1x3", "display_name": "Dcha. 1x3",
                         "source_tiles":
                         {
                             "x": 12,
@@ -164,7 +164,7 @@
                         }
                     },
                     {
-                        "name": "Right 1x2",
+                        "name": "Right 1x2", "display_name": "Dcha. 1x2",
                         "source_tiles":
                         {
                             "x": 13,

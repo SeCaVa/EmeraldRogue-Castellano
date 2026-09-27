@@ -203,6 +203,35 @@ static const u8 sTheEnd_LetterMap_EMark[] =
     0xFF, 1,    0xFF,
 };
 
+// Translation: "¿FIN?" / "FIN" instead of "THE END?" / "THE END."
+static const u8 sTheEnd_LetterMap_F[] =
+{
+    1, 0,    0,
+    1, 0xFF, 0xFF,
+    1, 2,    2,
+    1, 0xFF, 0xFF,
+    1, 0xFF, 0xFF,
+};
+
+static const u8 sTheEnd_LetterMap_I[] =
+{
+    0,    1, 0,
+    0xFF, 1, 0xFF,
+    0xFF, 1, 0xFF,
+    0xFF, 1, 0xFF,
+    0x80, 1, 0x80,
+};
+
+// QMark rotated 180 degrees
+static const u8 sTheEnd_LetterMap_InvQMark[] =
+{
+    0xFF, 0xC1, 0xFF,
+    0xFF, 0xC0, 0xFF,
+    0xC0, 0xC1, 0xFF,
+    0xC1, 0xFF, 0xC0,
+    0xC1, 0xC0, 0xC1,
+};
+
 static const u8 sTheEnd_LetterMap_FullStop[] =
 {
     0xFF, 0xFF, 0xFF,
@@ -1535,18 +1564,21 @@ static void DrawTheEnd(u16 offset, u16 palette)
     for (pos = 0; pos < 32 * 32; pos++)
         ((u16 *) (VRAM + offset))[pos] = baseTile + 1;
 
-    DrawLetterMapTiles(sTheEnd_LetterMap_T, 1, 7, offset, palette);
-    DrawLetterMapTiles(sTheEnd_LetterMap_H, 5, 7, offset, palette);
-    DrawLetterMapTiles(sTheEnd_LetterMap_E, 9, 7, offset, palette);
-    DrawLetterMapTiles(sTheEnd_LetterMap_E, 14, 7, offset, palette);
-    DrawLetterMapTiles(sTheEnd_LetterMap_N, 18, 7, offset, palette);
-    DrawLetterMapTiles(sTheEnd_LetterMap_D, 22, 7, offset, palette);
-
     // RogueNote: Todo - Swap this out based on percentage
     if(Rogue_UseFinalQuestEffects())
-        DrawLetterMapTiles(sTheEnd_LetterMap_FullStop, 26, 7, offset, palette);
+    {
+        DrawLetterMapTiles(sTheEnd_LetterMap_F, 9, 7, offset, palette);
+        DrawLetterMapTiles(sTheEnd_LetterMap_I, 13, 7, offset, palette);
+        DrawLetterMapTiles(sTheEnd_LetterMap_N, 17, 7, offset, palette);
+    }
     else
-        DrawLetterMapTiles(sTheEnd_LetterMap_QMark, 26, 7, offset, palette);
+    {
+        DrawLetterMapTiles(sTheEnd_LetterMap_InvQMark, 5, 7, offset, palette);
+        DrawLetterMapTiles(sTheEnd_LetterMap_F, 9, 7, offset, palette);
+        DrawLetterMapTiles(sTheEnd_LetterMap_I, 13, 7, offset, palette);
+        DrawLetterMapTiles(sTheEnd_LetterMap_N, 17, 7, offset, palette);
+        DrawLetterMapTiles(sTheEnd_LetterMap_QMark, 21, 7, offset, palette);
+    }
 }
 
 #define sState data[0]

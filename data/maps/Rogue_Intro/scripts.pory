@@ -266,7 +266,7 @@ script Rogue_Intro_MapScripts_LoadFrame_0
     // Fade in screen
     //
     delay(60)
-    msgbox(format("… … …\p… … …!\p¡Eh… … …!\p¿Me oyes?"), MSGBOX_AUTOCLOSE)
+    msgbox(format("… … …\p¡… … …!\p¡Eh… … …!\p¿Me oyes?"), MSGBOX_AUTOCLOSE)
 
     setobjectxy(OBJ_LOCAL_ID_PROF, COORD_CENTRE_X, COORD_CENTRE_Y)
     

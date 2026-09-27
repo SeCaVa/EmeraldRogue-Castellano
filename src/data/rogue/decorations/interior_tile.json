@@ -4,7 +4,7 @@
     ],
     "defaults":
     {
-        "display_group": "Tiles#Interior",
+        "display_group": "Tiles#Interior", "display_group_name": "Mobiliario",
         "source_map": "ROGUE_TEMPLATE_HOME_INTERIOR"
     },
     "decorations":
@@ -12,7 +12,7 @@
         "tiles_interior":
         [
             {
-                "name": "Rug",
+                "name": "Rug", "display_name": "Alfombra",
                 "layer": "DECOR_LAYER_PLACEABLE_SURFACE",
                 "source_tiles":
                 {
@@ -23,14 +23,14 @@
                 "variants":
                 [
                     {
-                        "name": "Fire Blast",
+                        "name": "Fire Blast", "display_name": "Llamarada",
                         "source_tiles":
                         {
                             "x": 0
                         }
                     },
                     {
-                        "name": "Fissure",
+                        "name": "Fissure", "display_name": "Fisura",
                         "source_tiles":
                         {
                             "x": 3
@@ -44,28 +44,28 @@
                         }
                     },
                     {
-                        "name": "Attract",
+                        "name": "Attract", "display_name": "Atracción",
                         "source_tiles":
                         {
                             "x": 9
                         }
                     },
                     {
-                        "name": "Thunder",
+                        "name": "Thunder", "display_name": "Trueno",
                         "source_tiles":
                         {
                             "x": 12
                         }
                     },
                     {
-                        "name": "Powder Snow",
+                        "name": "Powder Snow", "display_name": "Nieve Polvo",
                         "source_tiles":
                         {
                             "x": 15
                         }
                     },
                     {
-                        "name": "Spikes",
+                        "name": "Spikes", "display_name": "Púas",
                         "source_tiles":
                         {
                             "x": 18
@@ -74,7 +74,7 @@
                 ]
             },
             {
-                "name": "Chair",
+                "name": "Chair", "display_name": "Silla",
                 "source_tiles":
                 {
                     "y": 8,
@@ -84,21 +84,21 @@
                 "variants":
                 [
                     {
-                        "name": "Brick",
+                        "name": "Brick", "display_name": "Ladrillo",
                         "source_tiles":
                         {
                             "x": 0
                         }
                     },
                     {
-                        "name": "Bushy",
+                        "name": "Bushy", "display_name": "Frondosa",
                         "source_tiles":
                         {
                             "x": 1
                         }
                     },
                     {
-                        "name": "Stone",
+                        "name": "Stone", "display_name": "Piedra",
                         "source_tiles":
                         {
                             "x": 2
@@ -112,28 +112,28 @@
                         }
                     },
                     {
-                        "name": "Wooden",
+                        "name": "Wooden", "display_name": "Madera",
                         "source_tiles":
                         {
                             "x": 4
                         }
                     },
                     {
-                        "name": "Log",
+                        "name": "Log", "display_name": "Tronco",
                         "source_tiles":
                         {
                             "x": 5
                         }
                     },
                     {
-                        "name": "Pretty",
+                        "name": "Pretty", "display_name": "Bonita",
                         "source_tiles":
                         {
                             "x": 6
                         }
                     },
                     {
-                        "name": "Cute",
+                        "name": "Cute", "display_name": "Mona",
                         "source_tiles":
                         {
                             "x": 7
@@ -149,7 +149,7 @@
                 ]
             },
             {
-                "name": "Desk",
+                "name": "Desk", "display_name": "Mesa",
                 "layer": "DECOR_LAYER_PLACEABLE_SURFACE",
                 "source_tiles":
                 {
@@ -159,7 +159,7 @@
                 "variants":
                 [
                     {
-                        "name": "Small Wooden",
+                        "name": "Small Wooden", "display_name": "Madera peq.",
                         "source_tiles":
                         {
                             "x": 15,
@@ -167,7 +167,7 @@
                         }
                     },
                     {
-                        "name": "Small Poké Ball",
+                        "name": "Small Poké Ball", "display_name": "Poké Ball peq.",
                         "source_tiles":
                         {
                             "x": 15,
@@ -176,7 +176,7 @@
                     },
 
                     {
-                        "name": "Medium Brick",
+                        "name": "Medium Brick", "display_name": "Ladrillo med.",
                         "source_tiles":
                         {
                             "x": 9,
@@ -186,7 +186,7 @@
                         }
                     },
                     {
-                        "name": "Medium Bushy",
+                        "name": "Medium Bushy", "display_name": "Frondosa med.",
                         "source_tiles":
                         {
                             "x": 11,
@@ -196,7 +196,7 @@
                         }
                     },
                     {
-                        "name": "Medium Stone",
+                        "name": "Medium Stone", "display_name": "Piedra med.",
                         "source_tiles":
                         {
                             "x": 13,
@@ -206,7 +206,7 @@
                         }
                     },
                     {
-                        "name": "Medium Industrial",
+                        "name": "Medium Industrial", "display_name": "Industrial med.",
                         "source_tiles":
                         {
                             "x": 9,
@@ -216,7 +216,7 @@
                         }
                     },
                     {
-                        "name": "Medium Wooden",
+                        "name": "Medium Wooden", "display_name": "Madera med.",
                         "source_tiles":
                         {
                             "x": 11,
@@ -226,7 +226,7 @@
                         }
                     },
                     {
-                        "name": "Medium Log",
+                        "name": "Medium Log", "display_name": "Tronco med.",
                         "source_tiles":
                         {
                             "x": 13,
@@ -237,7 +237,7 @@
                     },
 
                     {
-                        "name": "Large Brick",
+                        "name": "Large Brick", "display_name": "Ladrillo gr.",
                         "source_tiles":
                         {
                             "x": 0,
@@ -247,7 +247,7 @@
                         }
                     },
                     {
-                        "name": "Large Bushy",
+                        "name": "Large Bushy", "display_name": "Frondosa gr.",
                         "source_tiles":
                         {
                             "x": 3,
@@ -257,7 +257,7 @@
                         }
                     },
                     {
-                        "name": "Large Stone",
+                        "name": "Large Stone", "display_name": "Piedra gr.",
                         "source_tiles":
                         {
                             "x": 6,
@@ -267,7 +267,7 @@
                         }
                     },
                     {
-                        "name": "Large Industrial",
+                        "name": "Large Industrial", "display_name": "Industrial gr.",
                         "source_tiles":
                         {
                             "x": 0,
@@ -277,7 +277,7 @@
                         }
                     },
                     {
-                        "name": "Large Wooden",
+                        "name": "Large Wooden", "display_name": "Madera gr.",
                         "source_tiles":
                         {
                             "x": 3,
@@ -287,7 +287,7 @@
                         }
                     },
                     {
-                        "name": "Large Log",
+                        "name": "Large Log", "display_name": "Tronco gr.",
                         "source_tiles":
                         {
                             "x": 6,
@@ -299,7 +299,7 @@
                 ]
             },
             {
-                "name": "Plants",
+                "name": "Plants", "display_name": "Plantas",
                 "source_tiles":
                 {
                     "width": 1,
@@ -308,7 +308,7 @@
                 "variants":
                 [
                     {
-                        "name": "Red",
+                        "name": "Red", "display_name": "Roja",
                         "source_tiles":
                         {
                             "x": 3,
@@ -324,7 +324,7 @@
                         }
                     },
                     {
-                        "name": "Pretty",
+                        "name": "Pretty", "display_name": "Bonita",
                         "source_tiles":
                         {
                             "x": 5,
@@ -332,7 +332,7 @@
                         }
                     },
                     {
-                        "name": "Colourful",
+                        "name": "Colourful", "display_name": "Colorida",
                         "source_tiles":
                         {
                             "x": 6,
@@ -342,7 +342,7 @@
                         }
                     },
                     {
-                        "name": "Big",
+                        "name": "Big", "display_name": "Grande",
                         "source_tiles":
                         {
                             "x": 8,
@@ -352,7 +352,7 @@
                         }
                     },
                     {
-                        "name": "Gorgeous",
+                        "name": "Gorgeous", "display_name": "Preciosa",
                         "source_tiles":
                         {
                             "x": 10,
@@ -364,7 +364,7 @@
                 ]
             },
             {
-                "name": "Faux Door",
+                "name": "Faux Door", "display_name": "Puerta falsa",
                 "source_tiles":
                 {
                     "x": 5,
@@ -374,7 +374,7 @@
                 }
             },
             {
-                "name": "MudBall",
+                "name": "MudBall", "display_name": "Bola de barro",
                 "source_tiles":
                 {
                     "x": 4,
@@ -382,7 +382,7 @@
                 }
             },
             {
-                "name": "Note Pads",
+                "name": "Note Pads", "display_name": "Baldosas musicales",
                 "source_tiles":
                 {
                     "width": 1,
@@ -391,7 +391,7 @@
                 "variants":
                 [
                     {
-                        "name": "A",
+                        "name": "A", "display_name": "La",
                         "source_tiles":
                         {
                             "x": 6,
@@ -399,7 +399,7 @@
                         }
                     },
                     {
-                        "name": "B",
+                        "name": "B", "display_name": "Si",
                         "source_tiles":
                         {
                             "x": 7,
@@ -407,7 +407,7 @@
                         }
                     },
                     {
-                        "name": "C",
+                        "name": "C", "display_name": "Do",
                         "source_tiles":
                         {
                             "x": 8,
@@ -415,7 +415,7 @@
                         }
                     },
                     {
-                        "name": "D",
+                        "name": "D", "display_name": "Re",
                         "source_tiles":
                         {
                             "x": 9,
@@ -423,7 +423,7 @@
                         }
                     },
                     {
-                        "name": "E",
+                        "name": "E", "display_name": "Mi",
                         "source_tiles":
                         {
                             "x": 10,
@@ -431,7 +431,7 @@
                         }
                     },
                     {
-                        "name": "F",
+                        "name": "F", "display_name": "Fa",
                         "source_tiles":
                         {
                             "x": 11,
@@ -439,7 +439,7 @@
                         }
                     },
                     {
-                        "name": "G",
+                        "name": "G", "display_name": "Sol",
                         "source_tiles":
                         {
                             "x": 12,
@@ -449,7 +449,7 @@
                 ]
             },
             {
-                "name": "Effect Pads",
+                "name": "Effect Pads", "display_name": "Baldosas de efecto",
                 "source_tiles":
                 {
                     "width": 1,
@@ -458,7 +458,7 @@
                 "variants":
                 [
                     {
-                        "name": "Glitter",
+                        "name": "Glitter", "display_name": "Brillo",
                         "source_tiles":
                         {
                             "x": 9,
@@ -466,7 +466,7 @@
                         }
                     },
                     {
-                        "name": "Jump",
+                        "name": "Jump", "display_name": "Salto",
                         "source_tiles":
                         {
                             "x": 10,
@@ -474,7 +474,7 @@
                         }
                     },
                     {
-                        "name": "Spin",
+                        "name": "Spin", "display_name": "Giro",
                         "source_tiles":
                         {
                             "x": 11,
@@ -484,7 +484,7 @@
                 ]
             },
             {
-                "name": "Water Balloon",
+                "name": "Water Balloon", "display_name": "Globo de agua",
                 "source_tiles":
                 {
                     "width": 1,
@@ -493,7 +493,7 @@
                 "variants":
                 [
                     {
-                        "name": "Red",
+                        "name": "Red", "display_name": "Rojo",
                         "source_tiles":
                         {
                             "x": 6,
@@ -501,7 +501,7 @@
                         }
                     },
                     {
-                        "name": "Blue",
+                        "name": "Blue", "display_name": "Azul",
                         "source_tiles":
                         {
                             "x": 7,
@@ -509,7 +509,7 @@
                         }
                     },
                     {
-                        "name": "Yellow",
+                        "name": "Yellow", "display_name": "Amarillo",
                         "source_tiles":
                         {
                             "x": 8,
@@ -519,7 +519,7 @@
                 ]
             },
             {
-                "name": "Climbing Frame",
+                "name": "Climbing Frame", "display_name": "Juego para trepar",
                 "source_tiles":
                 {
                     "x": 18,
@@ -529,7 +529,7 @@
                 }
             },
             {
-                "name": "Slide",
+                "name": "Slide", "display_name": "Tobogán",
                 "source_tiles":
                 {
                     "x": 17,
@@ -539,7 +539,7 @@
                 }
             },
             {
-                "name": "Tent",
+                "name": "Tent", "display_name": "Tienda de campaña",
                 "source_tiles":
                 {
                     "width": 3,
@@ -548,7 +548,7 @@
                 "variants":
                 [
                     {
-                        "name": "Red",
+                        "name": "Red", "display_name": "Roja",
                         "source_tiles":
                         {
                             "x": 12,
@@ -556,7 +556,7 @@
                         }
                     },
                     {
-                        "name": "Blue",
+                        "name": "Blue", "display_name": "Azul",
                         "source_tiles":
                         {
                             "x": 15,
@@ -566,7 +566,7 @@
                 ]
             },
             {
-                "name": "Small TV",
+                "name": "Small TV", "display_name": "Tele pequeña",
                 "source_tiles":
                 {
                     "width": 1,
@@ -575,7 +575,7 @@
                 "variants":
                 [
                     {
-                        "name": "Standard",
+                        "name": "Standard", "display_name": "Normal",
                         "source_tiles":
                         {
                             "x": 13,
@@ -583,7 +583,7 @@
                         }
                     },
                     {
-                        "name": "Round",
+                        "name": "Round", "display_name": "Redonda",
                         "source_tiles":
                         {
                             "x": 14,
@@ -591,7 +591,7 @@
                         }
                     },
                     {
-                        "name": "Cute",
+                        "name": "Cute", "display_name": "Mona",
                         "source_tiles":
                         {
                             "x": 15,
@@ -601,7 +601,7 @@
                 ]
             },
             {
-                "name": "Large Brick",
+                "name": "Large Brick", "display_name": "Ladrillo grande",
                 "source_tiles":
                 {
                     "width": 1,
@@ -610,7 +610,7 @@
                 "variants":
                 [
                     {
-                        "name": "Red",
+                        "name": "Red", "display_name": "Rojo",
                         "source_tiles":
                         {
                             "x": 1,
@@ -618,7 +618,7 @@
                         }
                     },
                     {
-                        "name": "Blue",
+                        "name": "Blue", "display_name": "Azul",
                         "source_tiles":
                         {
                             "x": 2,
@@ -626,7 +626,7 @@
                         }
                     },
                     {
-                        "name": "Yellow",
+                        "name": "Yellow", "display_name": "Amarillo",
                         "source_tiles":
                         {
                             "x": 3,
@@ -636,7 +636,7 @@
                 ]
             },
             {
-                "name": "Large Tire",
+                "name": "Large Tire", "display_name": "Neumático grande",
                 "layer": "DECOR_LAYER_PLACEABLE_SURFACE",
                 "source_tiles":
                 {
@@ -647,7 +647,7 @@
                 }
             },
             {
-                "name": "Small Fence",
+                "name": "Small Fence", "display_name": "Valla pequeña",
                 "source_tiles":
                 {
                     "width": 1,
