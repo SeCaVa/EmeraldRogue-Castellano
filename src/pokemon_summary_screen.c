@@ -3790,6 +3790,13 @@ static void PrintHeldItemName(void)
         text = gStringVar1;
     }
 
+    // Translation build: long translated item names switch to the narrow font (the window is 80 px wide)
+    if (GetStringWidth(FONT_NORMAL, text, 0) > 72)
+    {
+        x = GetStringCenterAlignXOffset(FONT_NARROW, text, 80);
+        PrintMoveNameOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_HELD_ITEM), text, x, 1, 0);
+        return;
+    }
     x = GetStringCenterAlignXOffset(FONT_NORMAL, text, 72) + 6;
     PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_HELD_ITEM), text, x, 1, 0, 0);
 }
