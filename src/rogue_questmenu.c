@@ -2162,8 +2162,8 @@ static void Draw_MasteryTrackerPage()
         AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 4, 131, 0, 0, color, TEXT_SKIP_DRAW, gStringVar4);
     }
 
-    AddTextPrinterParameterized4(WIN_LEFT_PAGE, FONT_SMALL_NARROW, 0, 131, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageLeft);
-    AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 57, 131, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageRight);
+    AddTextPrinterParameterized4(WIN_LEFT_PAGE, FONT_SMALL_NARROW, 0, 129, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageLeft);
+    AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 57, 129, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageRight);
 
     PutWindowTilemap(WIN_LEFT_PAGE);
     PutWindowTilemap(WIN_RIGHT_PAGE);
@@ -2409,8 +2409,8 @@ static void Draw_PlayerStatsPage()
         AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 4, 131, 0, 0, color, TEXT_SKIP_DRAW, gStringVar4);
     }
 
-    AddTextPrinterParameterized4(WIN_LEFT_PAGE, FONT_SMALL_NARROW, 0, 131, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageLeft);
-    AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 57, 131, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageRight);
+    AddTextPrinterParameterized4(WIN_LEFT_PAGE, FONT_SMALL_NARROW, 0, 129, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageLeft);
+    AddTextPrinterParameterized4(WIN_RIGHT_PAGE, FONT_SMALL_NARROW, 57, 129, 0, 0, color, TEXT_SKIP_DRAW, sText_ChangePageRight);
 
     PutWindowTilemap(WIN_LEFT_PAGE);
     PutWindowTilemap(WIN_RIGHT_PAGE);
