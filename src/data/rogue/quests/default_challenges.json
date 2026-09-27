@@ -281,7 +281,7 @@
             },
             {
                 "name": "Can't Pick!?", "display_name": "¿Cuál elijo?",
-                "description": "Gana una partida completa combatiendo contra Entrenadores solo con iniciales en tu equipo, p. ej. Charmander, Totodile, Treecko, Pikachu, Eevee, etc.",
+                "description": "Gana una partida completa combatiendo contra Entrenadores solo con iniciales, p. ej. Charmander, Totodile, Treecko, Pikachu o Eevee.",
                 "triggers":
                 [
                     {
@@ -317,7 +317,7 @@
             },
             {
                 "name": "Diversity", "display_name": "Diversidad",
-                "description": "Gana una partida completa combatiendo contra Entrenadores sin repetir tipos en tu equipo, p. ej. no puedes llevar a la vez un Bulbasaur y un Grimer.",
+                "description": "Gana una partida completa sin repetir tipos en tu equipo contra Entrenadores. Por ejemplo, no puedes llevar a Bulbasaur y Grimer.",
                 "triggers":
                 [
                     {
@@ -492,7 +492,7 @@
 
             {
                 "name": "BST Crown", "display_name": "Corona BST",
-                "description": "Gana una partida completa con: Maldición Bebé y usando contra Entrenadores solo {PKMN} con estadísticas base totales de 350 o menos (se ven en la Pokédex).",
+                "description": "Gana una partida completa con Maldición Bebé y usando contra Entrenadores solo {PKMN} con estadísticas base totales de 350 o menos.",
                 "triggers":
                 [
                     {
@@ -555,7 +555,7 @@
 
             {
                 "name": "Insane Mode", "display_name": "Modo locura",
-                "description": "Gana una partida completa con: Nuevo Comienzo activo, formato de combate Mixto, inicial aleatorio, Maldiciones Embargo, Ignorante y Especie, y sin usar {PKMN} Legendarios.",
+                "description": "Gana una partida con Nuevo Comienzo, combate Mixto, inicial al azar, maldiciones Embargo, Ignorante y Especie y sin Legendarios.",
                 "triggers":
                 [
                     {
@@ -616,7 +616,7 @@
             },
             {
                 "name": "Iron Kaizo", "display_name": "Kaizo de hierro",
-                "description": "Gana una partida completa con: Nuevo Comienzo activo, inicial aleatorio, Maldición Embargo, 5x Maldiciones Capacidad y 99x Maldiciones Descuento.",
+                "description": "Gana una partida completa con: Nuevo Comienzo, inicial aleatorio, Maldición Embargo, 5x Maldiciones Capacidad y 99x Maldiciones Descuento.",
                 "triggers":
                 [
                     {

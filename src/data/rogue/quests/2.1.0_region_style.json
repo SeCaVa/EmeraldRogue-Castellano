@@ -12,7 +12,7 @@
             {
                 "#if": "defined(ROGUE_EXPANSION)",
                 "name": "Z-A Royale", "display_name": "Royale Z-A",
-                "description": "Activa todos los Entrenadores y el Modo Arcoíris en el Lab. Config. y gana una partida completa con la Megapulsera y la Pokédex en cualquier variante de Leyendas Z-A.",
+                "description": "Activa todos los Entrenadores y el Modo Arcoíris en el Lab. Config. y gana una partida completa con la Megapulsera y la Pokédex de Leyendas Z-A.",
                 "flags": 
                 [
                     "CHALLENGE_DEFAULT",

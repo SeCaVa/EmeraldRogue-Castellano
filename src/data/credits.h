@@ -6,13 +6,13 @@
 
 #ifdef ROGUE_FEATURE_REVISED_MODE
 #define REVISED_CREDITS(method) \
-    method(5060, "Expansion Revised Balancing", CREDITS_FLAG_TITLE) \
+    method(5060, "Equilibrio revisado (Expansion)", CREDITS_FLAG_TITLE) \
     method(5061, "underFlorence", 0) \
     method(5062, "Amber Starlight", 0) \
     method(5063, "", CREDITS_FLAG_BREAK) \
     \
-    method(5070, "Vanilla Revised Balancing", CREDITS_FLAG_TITLE) \
-    method(5071, "Based on Royal Sapphire by", 0) \
+    method(5070, "Equilibrio revisado (Vanilla)", CREDITS_FLAG_TITLE) \
+    method(5071, "Basado en Royal Sapphire, de", 0) \
     method(5072, "ShockinglyGongas", 0) \
     method(5073, "", CREDITS_FLAG_BREAK) \
     \
@@ -25,11 +25,11 @@
 #define FOR_EACH_CREDIT(method) \
     method(0, "", 0) \
     method(1, "Pokémon Emerald Rogue", CREDITS_FLAG_TITLE) \
-    method(2, "Credits", CREDITS_FLAG_TITLE) \
+    method(2, "Créditos", CREDITS_FLAG_TITLE) \
     method(3, "", CREDITS_FLAG_BREAK) \
     \
     method(100, "", 0) \
-    method(101, "Hack Creator", CREDITS_FLAG_TITLE) \
+    method(101, "Creación del hack", CREDITS_FLAG_TITLE) \
     method(102, "Pokabbie", 0) \
     method(103, "", CREDITS_FLAG_BREAK) \
     \
@@ -39,10 +39,10 @@
     method(203, "", CREDITS_FLAG_BREAK) \
     \
     method(300, "", 0) \
-    method(301, "Made possible by...", CREDITS_FLAG_TITLE) \
+    method(301, "Gracias a...", CREDITS_FLAG_TITLE) \
     method(302, "", CREDITS_FLAG_BREAK) \
     \
-    method(400, "Community Moderators", CREDITS_FLAG_TITLE) \
+    method(400, "Moderación de la comunidad", CREDITS_FLAG_TITLE) \
     method(401, "Erma", 0) \
     method(402, "Raven", 0) \
     method(403, "TailsMK4", 0) \
@@ -50,14 +50,14 @@
     method(405, "Nacholord", 0) \
     method(406, "", CREDITS_FLAG_BREAK) \
     \
-    method(500, "Community Artists", CREDITS_FLAG_TITLE) \
+    method(500, "Artistas de la comunidad", CREDITS_FLAG_TITLE) \
     method(501, "Zefa", 0) \
     method(502, "SuperBren614", 0) \
     method(503, "LightningStrike7", 0) \
     method(504, "Hex", 0) \
     method(505, "", CREDITS_FLAG_BREAK) \
     \
-    method(5050, "Community Programmers", CREDITS_FLAG_TITLE) \
+    method(5050, "Programación de la comunidad", CREDITS_FLAG_TITLE) \
     method(5051, "DepressoMocha", 0) \
     method(5052, "Kleeenexfeu", 0) \
     method(5053, "Lemonancy", 0) \
@@ -88,21 +88,21 @@
     method(620, "", CREDITS_FLAG_BREAK) \
     \
     method(700, "", 0) \
-    method(701, "Key Items Menu", CREDITS_FLAG_TITLE) \
+    method(701, "Menú de objetos clave", CREDITS_FLAG_TITLE) \
     method(702, "Merrp", 0) \
     method(703, "", CREDITS_FLAG_BREAK) \
     \
     method(800, "", 0) \
-    method(801, "Follow Me + Sideways Stairs", CREDITS_FLAG_TITLE) \
+    method(801, "Seguimiento + escaleras laterales", CREDITS_FLAG_TITLE) \
     method(802, "ghoulslash", 0) \
     method(803, "", CREDITS_FLAG_BREAK) \
     \
     method(900, "", 0) \
-    method(901, "DS Songs", CREDITS_FLAG_TITLE) \
+    method(901, "Música de DS", CREDITS_FLAG_TITLE) \
     method(902, "CyanSMP64", 0) \
     method(903, "", CREDITS_FLAG_BREAK) \
     \
-    method(1000, "Additional Sprites", CREDITS_FLAG_TITLE) \
+    method(1000, "Sprites adicionales", CREDITS_FLAG_TITLE) \
     method(1001, "AveonTrainer", 0) \
     method(1002, "PurpleZaffre", 0) \
     method(1003, "UlithiumDragon", 0) \
@@ -151,26 +151,31 @@
     method(1231, "TintjeMadelintje101", 0) \
     method(1232, "", CREDITS_FLAG_BREAK) \
     \
+    method(1290, "", 0) \
+    method(1291, "Traducción al castellano", CREDITS_FLAG_TITLE) \
+    method(1292, "SeCaVa", 0) \
+    method(1293, "", CREDITS_FLAG_BREAK) \
+    \
     method(1301, "", 0) \
-    method(1302, "Special Thanks to", CREDITS_FLAG_TITLE) \
+    method(1302, "Agradecimientos especiales", CREDITS_FLAG_TITLE) \
     method(1303, "Kate", 0) \
     method(1304, "", CREDITS_FLAG_BREAK) \
     \
     method(1400, "", 0) \
-    method(1401, "And to you, the community", 0) \
+    method(1401, "Y a ti, la comunidad", 0) \
     method(1402, "", CREDITS_FLAG_BREAK) \
     \
     method(1403, "", 0) \
-    method(1404, "Thank you!", 0) \
+    method(1404, "¡Gracias!", 0) \
     method(1405, "", CREDITS_FLAG_BREAK) \
     \
     method(1406, "", 0) \
-    method(1407, "For making Rogue larger than", 0) \
-    method(1408, "I could ever have imagined!", 0) \
+    method(1407, "¡Por hacer Rogue más grande", 0) \
+    method(1408, "de lo que nunca imaginé!", 0) \
     method(1409, "", CREDITS_FLAG_BREAK) \
     \
     method(1410, "", 0) \
-    method(1411, "Good luck on your future runs!", 0) \
+    method(1411, "¡Suerte en tus próximas partidas!", 0) \
     method(1412, "{EMOJI_HEART}", 0) \
     method(1413, "", CREDITS_FLAG_BREAK) \
     \

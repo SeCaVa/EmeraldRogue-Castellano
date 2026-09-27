@@ -465,7 +465,7 @@
             },
             {
                 "name": "Collector S", "display_name": "Coleccionista S",
-                "description": "Registra datos de 10 Pokémon variocolor en la Pokédex.\n\n(Puedes encadenar Pokémon derrotándolos seguidos para aumentar la probabilidad)",
+                "description": "Registra 10 Pokémon variocolor en la Pokédex. (Encadenar Pokémon derrotándolos seguidos sube la probabilidad)",
                 "flags": 
                 [
                     "MAIN_QUEST_DEFAULT",
