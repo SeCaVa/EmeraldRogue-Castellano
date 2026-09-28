@@ -1697,3 +1697,7 @@ $(MID_SUBDIR)/se_m_leer.s: %.s: %.mid
 
 $(MID_SUBDIR)/se_dex_search.s: %.s: %.mid
 	$(MID) $< $@ -E -G127 -v100 -P5
+
+# Translation: jingle of the translation credit screen
+$(MID_SUBDIR)/mus_traduccion.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G012 -V100

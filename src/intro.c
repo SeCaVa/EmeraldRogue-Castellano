@@ -1141,6 +1141,7 @@ static u8 SetUpCopyrightScreen(void)
         if (UpdatePaletteFade())
             break;
         LoadTranslationGraphics();
+        m4aSongNumStart(MUS_TRADUCCION);
         BeginNormalPaletteFade(PALETTES_ALL, 1, 16, 0, RGB_BLACK);
         sTranslationScreenTimer = TRANSLATION_SCREEN_FRAMES;
         gMain.state++;
