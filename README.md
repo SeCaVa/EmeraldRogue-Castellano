@@ -16,8 +16,10 @@ La rama que contiene la traducción es **`castellano`**.
 - **Misiones** y **entrenadores**: nombres de misiones, descripciones y todas las frases de los Líderes, el Alto Mando, los Campeones, los rivales y los equipos villanos.
 - **Menús e interfaz**: menú principal, opciones, ajustes de Rogue, tablero de misiones, estadísticas, recuadro del menú START, Pokédex de Rogue, avisos emergentes, personalización del personaje…
 - **Combate**: todos los mensajes, los menús de combate, la eficacia de los movimientos, los tipos y los climas.
-- **Nombres oficiales** de movimientos, habilidades, objetos, bayas, naturalezas, clases de entrenador y categorías de especie.
-- **Descripciones** de movimientos, habilidades, objetos y bayas.
+- **Nombres oficiales** de movimientos (incluidos los movimientos Z y Gigamax al usarlos en combate), habilidades, objetos, bayas, naturalezas, clases de entrenador y categorías de especie.
+- **Descripciones** de movimientos, habilidades, objetos (incluidas las megapiedras nuevas de Leyendas Z-A) y bayas.
+- **Decoraciones de la casa**: nombres de las decoraciones, de sus variantes y de sus grupos.
+- **Créditos finales**, con su sección de la traducción, y el cartel del final: "¿FIN?" (o "FIN" con todas las misiones completas), dibujado con las mismas piezas que el "THE END?" original.
 - **Nombres de personajes** con su versión oficial en España (por ejemplo, Blasco, Máximo, Treto o Aria).
 - **Textos de sistema de Pokémon Esmeralda que Rogue sigue usando**: guardar partida, interacciones del mapa (rocas, árboles, cascadas, Surf, Buceo), Centro Pokémon, bayas, PC, Repelente, Buscapelea, la presentación del Prof. Abedul y los avisos de la Zona Safari.
 - **Gráficos con texto**, tomados de Pokémon Edición Esmeralda en castellano para que se vean igual que en el juego original:
@@ -30,6 +32,10 @@ La rama que contiene la traducción es **`castellano`**.
   - Pantalla de intercambio y aviso de emulador poco preciso ("¡AVISO!").
   - Propios de Rogue, redibujados con su mismo estilo de letra: "PS" de la barra de vida, iconos de teratipo (LUCHA, VOLAD, FUEGO…), estados DOR y QUE del marcador de combate y botón "NOTAS" de Voltorb Flip.
   - Lo que no existe en Esmeralda se ha dibujado con las mismas letras: tipos HADA y ASTRAL, estado CGL (congelación), AMISTAD, "MISIONES" del libro de misiones y "A·ABRIR / SELECT·EDITAR" de la Pokédex de Rogue.
+
+### Pantalla de la traducción
+
+Al arrancar, después de la pantalla de @Pokabbie, aparecen dos pantallas de créditos de la traducción acompañadas de un jingle corto de campanas: primero el logotipo de SeCaVa (un eclipse con la "C" como eclipse en miniatura) y después "Traducido por SeCaVa". Se pueden saltar con A, B o START.
 
 ### Criterios de la traducción
 
@@ -75,6 +81,11 @@ Son los cambios mínimos para que la traducción funcione:
 | Sin "'s" tras el nombre en el recuadro de habilidad del combate | En castellano no existe ese posesivo. |
 | Campo `display_name` para el EO de los Pokémon de regalo | El nombre interno también es el identificador del código. |
 | Títulos de misión en fuente estrecha y títulos visibles separados del identificador interno | Para que los títulos traducidos quepan sin romper las misiones. |
+| Nombre del objeto equipado en fuente estrecha si no cabe | Pantalla de datos del Pokémon ("Gafas Especiales"…). |
+| Campo `display_name` en las decoraciones (nombre, variante y grupo) | Los nombres internos también son identificadores del código. |
+| Etiquetas "atrás / sig." del libro de misiones 2 px más arriba | La "g" de "sig." se cortaba por abajo. |
+| "¿FIN?" / "FIN" al final de los créditos | Sustituye a "THE END?" / "THE END.". |
+| Pantallas de créditos de la traducción al arrancar, con su jingle | Crédito de la traducción. El jingle no depende del volumen de música guardado porque suena antes de cargar la partida. |
 | Arreglos para compilar con GCC moderno | `json11` y `scaninc`. |
 
 ---
@@ -94,7 +105,7 @@ El resultado es una ROM de Emerald Rogue EX en castellano. **Este repositorio no
 ## Qué no está traducido
 
 - **Entradas de la Pokédex**: Emerald Rogue no las incluye en la ROM.
-- **Funciones de Pokémon Esmeralda que Rogue no usa**: Sala Unión, Regalo Misterioso, PokéNav, televisión, Frente Batalla y Pase Frontera, Pokédex original, casino, concursos, caja de Pokécubos, Tritura Bayas, decoraciones y los mapas originales de la Zona Safari (textos y gráficos).
+- **Funciones de Pokémon Esmeralda que Rogue no usa**: Sala Unión, Regalo Misterioso, PokéNav, televisión, Frente Batalla y Pase Frontera, Pokédex original, casino, concursos, caja de Pokécubos, Tritura Bayas, decoraciones de la base secreta y los mapas originales de la Zona Safari (textos y gráficos).
 - **Logotipos**: el logotipo del título, el de pokeemerald-expansion y el de la Pokédex se dejan como en el original.
 
 Si encuentras un texto sin traducir, cortado o con errores, abre una *issue* en este repositorio.
@@ -107,6 +118,7 @@ Si encuentras un texto sin traducir, cortado o con errores, abre una *issue* en 
 - **pokeemerald-expansion**: [RHH (ROM Hacking Hideout)](https://github.com/rh-hideout/pokeemerald-expansion) y su [lista de colaboradores](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits). Emerald Rogue se basa en su proyecto.
 - **pokeemerald**: el proyecto de descompilación de [pret](https://github.com/pret/pokeemerald).
 - **Datos de referencia**: [PokeAPI](https://pokeapi.co), [PkParaíso](https://pkparaiso.com) y [WikiDex](https://www.wikidex.net) para los nombres y las descripciones oficiales en castellano; Pokémon Edición Esmeralda en castellano para los nombres cortos, los mensajes de sistema y los gráficos con texto.
+- **Fuente del logotipo de la traducción**: [Jost](https://fonts.google.com/specimen/Jost), de Owen Earl (licencia SIL Open Font License).
 - **Traducción al castellano**: SeCaVa, con ayuda de Claude (Anthropic).
 
 El README original del proyecto se conserva en [README_ORIGINAL.md](README_ORIGINAL.md).
@@ -134,11 +146,17 @@ The translation lives in the **`castellano`** branch.
 - **Quests** and **trainers**: quest names, descriptions and every line of the Gym Leaders, Elite Four, Champions, rivals and villain teams.
 - **Menus and UI**: main menu, options, Rogue settings, quest board, stats, START menu info box, Rogue Pokédex, pop-ups, character customisation…
 - **Battle**: all messages, battle menus, move effectiveness, types and weather.
-- **Official Spanish names** of moves, abilities, items, berries, natures, trainer classes and species categories.
-- **Descriptions** of moves, abilities, items and berries.
+- **Official Spanish names** of moves (including Z-Moves and G-Max moves when used in battle), abilities, items, berries, natures, trainer classes and species categories.
+- **Descriptions** of moves, abilities, items (including the new Legends Z-A Mega Stones) and berries.
+- **Home decorations**: decoration, variant and group names.
+- **End credits**, with a translation section, and the closing card: "¿FIN?" (or "FIN" once every quest is complete), built from the same tiles as the original "THE END?".
 - **Character names** using their official Spanish (Spain) versions (e.g. Blasco, Máximo, Treto, Aria).
 - **Pokémon Emerald system text still used by Rogue**: saving, map interactions (rocks, trees, waterfalls, Surf, Dive), Pokémon Center, berries, PC, Repel, VS Seeker, Prof. Birch's introduction and Safari Zone prompts.
 - **Graphics containing text**, taken from the Spanish release of Pokémon Emerald so they look like the original game: "PULSA START", type and contest icons, TIPO / POTENC. / PRECIS. / EFECTO labels, status icons, summary screen, trainer card, PC box menu, naming screen buttons, the MT / DT / MO labels in the Bag, the trade screen and the inaccurate-emulator warning ("¡AVISO!"). Rogue's own graphics were redrawn in their original lettering: the "PS" (HP) label on the health bar, the Tera type icons, the DOR/QUE (sleep/burn) battle status labels and Voltorb Flip's "NOTAS" button. Graphics that don't exist in Emerald (Fairy and Stellar types, frostbite status, friendship label, the quest book title and the Rogue Pokédex hints) were drawn with the same lettering.
+
+### Translation screen
+
+At boot, after the @Pokabbie screen, two translation credit screens appear with a short bell jingle: first the SeCaVa logo (an eclipse, with the "C" as a small eclipse) and then "Traducido por SeCaVa". They can be skipped with A, B or START.
 
 ### Translation guidelines
 
@@ -175,6 +193,11 @@ Only the changes needed for the translation to work:
 | No "'s" after the name in the battle ability pop-up | Spanish has no such possessive. |
 | `display_name` field for gift Pokémon OT names | The internal name is also the code identifier. |
 | Quest titles in narrow font, display titles separate from internal IDs | Translated titles fit without breaking quests. |
+| Held item name in narrow font when it doesn't fit | Pokémon summary screen ("Gafas Especiales"…). |
+| `display_name` field for decorations (name, variant and group) | Internal names are also code identifiers. |
+| Quest book "atrás / sig." labels 2 px higher | The "g" in "sig." was cut off at the bottom. |
+| "¿FIN?" / "FIN" at the end of the credits | Replaces "THE END?" / "THE END.". |
+| Translation credit screens at boot, with their jingle | Translation credit. The jingle ignores the saved music volume because it plays before the save is loaded. |
 | Fixes to build with modern GCC | `json11` and `scaninc`. |
 
 ### How to build
@@ -190,7 +213,7 @@ The `castellano` branch builds exactly like the original Emerald Rogue:
 ### Not translated
 
 - **Pokédex entries**: Emerald Rogue doesn't include them in the ROM.
-- **Pokémon Emerald features Rogue doesn't use**: Union Room, Mystery Gift, PokéNav, TV, Battle Frontier and Frontier Pass, the original Pokédex, Game Corner, contests, Pokéblock case, Berry Crush, decorations and the original Safari Zone maps (text and graphics).
+- **Pokémon Emerald features Rogue doesn't use**: Union Room, Mystery Gift, PokéNav, TV, Battle Frontier and Frontier Pass, the original Pokédex, Game Corner, contests, Pokéblock case, Berry Crush, secret base decorations and the original Safari Zone maps (text and graphics).
 - **Logos**: the title screen, pokeemerald-expansion and Pokédex logos are left as in the original.
 
 If you find untranslated, cut-off or wrong text, please open an issue in this repository.
@@ -201,6 +224,7 @@ If you find untranslated, cut-off or wrong text, please open an issue in this re
 - **pokeemerald-expansion**: [RHH (ROM Hacking Hideout)](https://github.com/rh-hideout/pokeemerald-expansion) and its [contributors](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits). Emerald Rogue is built on their project.
 - **pokeemerald**: the [pret](https://github.com/pret/pokeemerald) decompilation project.
 - **Reference data**: [PokeAPI](https://pokeapi.co), [PkParaíso](https://pkparaiso.com) and [WikiDex](https://www.wikidex.net) for official Spanish names and descriptions; the Spanish release of Pokémon Emerald for short names, system messages and text graphics.
+- **Translation logo font**: [Jost](https://fonts.google.com/specimen/Jost) by Owen Earl (SIL Open Font License).
 - **Spanish translation**: SeCaVa, with help from Claude (Anthropic).
 
 The project's original README is kept in [README_ORIGINAL.md](README_ORIGINAL.md).
