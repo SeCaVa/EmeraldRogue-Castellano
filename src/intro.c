@@ -1064,15 +1064,18 @@ static void LoadCopyrightGraphics(u16 tilesetAddress, u16 tilemapAddress, u16 pa
     LoadPalette(gIntroCopyright_Pal, paletteOffset, PLTT_SIZE_4BPP);
 }
 
-// Translation: credit screen shown after the copyright one
-#define TRANSLATION_SCREEN_FRAMES 150
-static u8 sTranslationScreenTimer;
+// Translation: two credit screens shown after the copyright one, synced to the jingle
+// (5 beats on the SeCaVa logo, 5 on 'Traducido por SeCaVa'). A/B/START skip them.
+#define TRANSLATION_SWAP_FRAME 270      // while the 5th beat fades out, before the 2nd phrase (frame 320; 90 BPM = 40 frames per beat)
+#define TRANSLATION_END_FRAME  560      // the jingle ends around frame 580
+static u16 sTranslationFrame;
+static bool8 sTranslationSkip;
 
-static void LoadTranslationGraphics(void)
+static void LoadTranslationGraphics(const u32 *gfx, const u32 *tilemap, const u16 *pal)
 {
-    LZ77UnCompVram(gIntroTranslation_Gfx, (void *)(VRAM + 0x8000));
-    LZ77UnCompVram(gIntroTranslation_Tilemap, (void *)(VRAM + 0x3800));
-    LoadPalette(gIntroTranslation_Pal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
+    LZ77UnCompVram(gfx, (void *)(VRAM + 0x8000));
+    LZ77UnCompVram(tilemap, (void *)(VRAM + 0x3800));
+    LoadPalette(pal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
     BlendPalettes(PALETTES_ALL, 16, RGB_BLACK);
     SetGpuReg(REG_OFFSET_BG0CNT, BGCNT_PRIORITY(0)
                                | BGCNT_CHARBASE(2)
@@ -1140,22 +1143,44 @@ static u8 SetUpCopyrightScreen(void)
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
         if (UpdatePaletteFade())
             break;
-        LoadTranslationGraphics();
+        LoadTranslationGraphics(gIntroTranslation_Gfx, gIntroTranslation_Tilemap, gIntroTranslation_Pal);
+        m4aSongNumStart(MUS_TRADUCCION);
         BeginNormalPaletteFade(PALETTES_ALL, 1, 16, 0, RGB_BLACK);
-        sTranslationScreenTimer = TRANSLATION_SCREEN_FRAMES;
+        sTranslationFrame = 0;
+        sTranslationSkip = FALSE;
         gMain.state++;
         break;
-    case 142:
+    case 142: // SeCaVa logo
+    case 143: // fading to black between both screens
+    case 144: // 'Traducido por SeCaVa'
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
-        if (UpdatePaletteFade())
+        UpdatePaletteFade();
+        sTranslationFrame++;
+        if (!sTranslationSkip && JOY_NEW(A_BUTTON | B_BUTTON | START_BUTTON))
+        {
+            FadeOutBGM(4);
+            sTranslationSkip = TRUE;
+        }
+        if (gPaletteFade.active)
             break;
-        if (--sTranslationScreenTimer == 0)
+        if (sTranslationSkip || (gMain.state == 144 && sTranslationFrame >= TRANSLATION_END_FRAME))
         {
             BeginNormalPaletteFade(PALETTES_ALL, 1, 0, 16, RGB_BLACK);
-            gMain.state++;
+            gMain.state = 145;
+        }
+        else if (gMain.state == 142 && sTranslationFrame >= TRANSLATION_SWAP_FRAME)
+        {
+            BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+            gMain.state = 143;
+        }
+        else if (gMain.state == 143)
+        {
+            LoadTranslationGraphics(gIntroTranslation2_Gfx, gIntroTranslation2_Tilemap, gIntroTranslation2_Pal);
+            BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
+            gMain.state = 144;
         }
         break;
-    case 143:
+    case 145:
         if (UpdatePaletteFade())
             break;
 #if EXPANSION_INTRO == TRUE

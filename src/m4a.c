@@ -1,6 +1,7 @@
 #include <string.h>
 #include "gba/m4a_internal.h"
 #include "global.h"
+#include "constants/songs.h"
 
 u8 Rogue_ModifySoundVolume(struct MusicPlayerInfo *mplayInfo, u8 volume, u16 soundType);
 
@@ -599,7 +600,8 @@ void MPlayStart(struct MusicPlayerInfo *mplayInfo, struct SongHeader *songHeader
     struct MusicPlayerTrack *track;
 
     u8 volume = Rogue_ModifySoundVolume(mplayInfo, 64, ROGUE_SOUND_TYPE_UNKNOWN);
-    if(volume == 0)
+    // Translation: the translation jingle plays before the save (and its volume options) is loaded
+    if(volume == 0 && songHeader != gSongTable[MUS_TRADUCCION].header)
     {
         // Override with MUS_DUMMY so something still technically plays
         songHeader = gSongTable[0].header;

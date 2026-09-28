@@ -755,6 +755,7 @@ gSongTable::
 	song mus_pl_vs_regi, 0, 0
 	song mus_move_deleted_slow, 2, 2
 	song mus_debug_test, 0, 0
+	song mus_traduccion, 0, 0
 
 	.align 2
 dummy_song_header:

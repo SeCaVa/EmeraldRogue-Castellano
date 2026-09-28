@@ -702,6 +702,7 @@
 
 #define MUS_MOVE_DELETED_SLOW           (MUS_EXTRA_START + 1)
 #define MUS_DEBUG_TEST                  (MUS_EXTRA_START + 2)
+#define MUS_TRADUCCION                  (MUS_EXTRA_START + 3) // Translation: jingle of the translation credit screen (outside END_MUS on purpose)
 
 #define END_MUS                     MUS_DEBUG_TEST
 
