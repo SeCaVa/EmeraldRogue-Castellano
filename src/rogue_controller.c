@@ -768,7 +768,8 @@ u8 Rogue_ModifySoundVolume(struct MusicPlayerInfo *mplayInfo, u8 volume, u16 sou
                 mplayInfo->songHeader == gSongTable[MUS_HG_LEVEL_UP].header ||
                 mplayInfo->songHeader == gSongTable[MUS_HG_EVOLVED].header ||
                 mplayInfo->songHeader == gSongTable[MUS_DP_LEVEL_UP].header ||
-                mplayInfo->songHeader == gSongTable[MUS_DP_EVOLVED].header
+                mplayInfo->songHeader == gSongTable[MUS_DP_EVOLVED].header ||
+                mplayInfo->songHeader == gSongTable[MUS_TRADUCCION].header // Translation: plays before the save (and its volume) is loaded
             )
             {
                 // do nothing
