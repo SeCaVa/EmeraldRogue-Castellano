@@ -360,27 +360,27 @@ static const struct WindowTemplate sQuestWinTemplates[WIN_COUNT + 1] =
     [WIN_COUNT] = DUMMY_WIN_TEMPLATE,
 };
 
-static u8 const sText_EarlyGameTodo[] = _("·{COLOR BLUE}Pendiente");
+static u8 const sText_EarlyGameTodo[] = _("·{COLOR BLUE}Faltan");
 static u8 const sText_EarlyGameComplete[] = _("·{COLOR GREEN}Hecha");
 static u8 const sText_EarlyGameActive[] = _("·{COLOR BLUE}Activa");
-static u8 const sText_EarlyGameInactive[] = _("·{COLOR RED}Inactiva");
+static u8 const sText_EarlyGameInactive[] = _("·{COLOR RED}Parada");
 
-static u8 const sText_QuestsTodo[] = _("Principal·{FONT_SMALL_NARROW}{COLOR BLUE}Pendiente");
+static u8 const sText_QuestsTodo[] = _("Principal·{FONT_SMALL_NARROW}{COLOR BLUE}Faltan");
 static u8 const sText_QuestsComplete[] = _("Principal·{FONT_SMALL_NARROW}{COLOR GREEN}Hecha");
 static u8 const sText_QuestsActive[] = _("Principal·{FONT_SMALL_NARROW}{COLOR BLUE}Activa");
-static u8 const sText_QuestsInactive[] = _("Principal·{FONT_SMALL_NARROW}{COLOR RED}Inactiva");
+static u8 const sText_QuestsInactive[] = _("Principal·{FONT_SMALL_NARROW}{COLOR RED}Parada");
 
-static u8 const sText_ChallengesTodo[] = _("Desafío·{FONT_SMALL_NARROW}{COLOR BLUE}Pendiente");
+static u8 const sText_ChallengesTodo[] = _("Desafío·{FONT_SMALL_NARROW}{COLOR BLUE}Faltan");
 static u8 const sText_ChallengesComplete[] = _("Desafío·{FONT_SMALL_NARROW}{COLOR GREEN}Hecho");
 static u8 const sText_ChallengesActive[] = _("Desafío·{FONT_SMALL_NARROW}{COLOR BLUE}Activo");
-static u8 const sText_ChallengesInactive[] = _("Desafío·{FONT_SMALL_NARROW}{COLOR RED}Inactivo");
+static u8 const sText_ChallengesInactive[] = _("Desafío·{FONT_SMALL_NARROW}{COLOR RED}Parado");
 
 static u8 const sText_MonMastery[] = _("Maestría {PKMN}");
 static u8 const sText_MonMasteryTracker[] = _("Registro {PKMN}");
-static u8 const sText_MonMasteryTodo[] = _("Misiones·{FONT_SMALL_NARROW}{COLOR BLUE}Pendiente");
+static u8 const sText_MonMasteryTodo[] = _("Misiones·{FONT_SMALL_NARROW}{COLOR BLUE}Faltan");
 static u8 const sText_MonMasteryComplete[] = _("Misiones·{FONT_SMALL_NARROW}{COLOR GREEN}Hechas");
 static u8 const sText_MonMasteryActive[] = _("Maestría·{FONT_SMALL_NARROW}{COLOR BLUE}Activa");
-static u8 const sText_MonMasteryInactive[] = _("Maestría·{FONT_SMALL_NARROW}{COLOR RED}Inactiva");
+static u8 const sText_MonMasteryInactive[] = _("Maestría·{FONT_SMALL_NARROW}{COLOR RED}Parada");
 
 static u8 const sText_Stats[] = _("{FONT_SMALL_NARROW}Estadísticas");
 
@@ -391,7 +391,7 @@ static u8 const sText_Todo[] = _("Pendiente");
 static u8 const sText_Complete[] = _("Completa");
 static u8 const sText_Back[] = _("Atrás");
 static u8 const sText_Progress[] = _("Progreso");
-static u8 const sText_AButtonPin[] = _("{COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}{A_BUTTON} Fijar {SELECT_BUTTON} Orden");
+static u8 const sText_AButtonPin[] = _("{COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}{A_BUTTON}Fijar {SELECT_BUTTON}Orden");
 
 static u8 const sText_MarkerInProgress[] = _("{COLOR BLUE}·En curso·");
 static u8 const sText_MarkerInactive[] = _("{COLOR RED}·Inactiva·");
