@@ -1700,4 +1700,4 @@ $(MID_SUBDIR)/se_dex_search.s: %.s: %.mid
 
 # Translation: jingle of the translation credit screen
 $(MID_SUBDIR)/mus_traduccion.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G012 -V100
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V110

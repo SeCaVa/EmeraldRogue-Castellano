@@ -1065,7 +1065,7 @@ static void LoadCopyrightGraphics(u16 tilesetAddress, u16 tilemapAddress, u16 pa
 }
 
 // Translation: credit screen shown after the copyright one
-#define TRANSLATION_SCREEN_FRAMES 150
+#define TRANSLATION_SCREEN_FRAMES 180
 static u8 sTranslationScreenTimer;
 
 static void LoadTranslationGraphics(void)
