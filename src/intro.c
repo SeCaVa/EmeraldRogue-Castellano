@@ -1066,8 +1066,8 @@ static void LoadCopyrightGraphics(u16 tilesetAddress, u16 tilemapAddress, u16 pa
 
 // Translation: two credit screens shown after the copyright one, synced to the jingle
 // (5 beats on the SeCaVa logo, 5 on 'Traducido por SeCaVa'). A/B/START skip them.
-#define TRANSLATION_SWAP_FRAME 214      // in the 2-beat pause between both phrases (88 BPM, 41 frames per beat)
-#define TRANSLATION_END_FRAME  490      // the jingle ends around frame 511
+#define TRANSLATION_SWAP_FRAME 270      // while the 5th beat fades out, before the 2nd phrase (frame 320; 90 BPM = 40 frames per beat)
+#define TRANSLATION_END_FRAME  560      // the jingle ends around frame 580
 static u16 sTranslationFrame;
 static bool8 sTranslationSkip;
 
