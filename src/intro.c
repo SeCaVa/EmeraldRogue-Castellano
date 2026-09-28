@@ -1065,8 +1065,8 @@ static void LoadCopyrightGraphics(u16 tilesetAddress, u16 tilemapAddress, u16 pa
 }
 
 // Translation: credit screen shown after the copyright one
-#define TRANSLATION_SCREEN_FRAMES 180
-static u8 sTranslationScreenTimer;
+#define TRANSLATION_SCREEN_FRAMES 400   // long enough for the jingle; A/B/START skip it
+static u16 sTranslationScreenTimer;
 
 static void LoadTranslationGraphics(void)
 {
@@ -1150,6 +1150,11 @@ static u8 SetUpCopyrightScreen(void)
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
         if (UpdatePaletteFade())
             break;
+        if (JOY_NEW(A_BUTTON | B_BUTTON | START_BUTTON))
+        {
+            FadeOutBGM(4);
+            sTranslationScreenTimer = 1;
+        }
         if (--sTranslationScreenTimer == 0)
         {
             BeginNormalPaletteFade(PALETTES_ALL, 1, 0, 16, RGB_BLACK);
