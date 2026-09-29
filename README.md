@@ -8,6 +8,8 @@ Traducción no oficial al **castellano de España** de **Emerald Rogue EX v2.2.1
 
 La rama que contiene la traducción es **`castellano`**.
 
+Hilo del proyecto en Whack a Hack!: **[Emerald Rogue EX v2.2.1a — Traducción al castellano](https://whackahack.com/foro/threads/emerald-rogue-ex-v2-2-1a-traduccion-al-castellano.69359/)**. Ahí puedes comentar, dar sugerencias o avisar de errores.
+
 ---
 
 ## Qué está traducido
@@ -141,6 +143,8 @@ Unofficial **Castilian Spanish** (Spain) translation of **Emerald Rogue EX v2.2.
 > The whole game (design, programming, content, graphics and balance) is the work of **Pokabbie** and the Emerald Rogue contributors. This fork **only translates the text and the graphics that contain text**, plus the minimum code changes needed for Spanish to fit and display correctly. If you enjoy the game, please support the original project.
 
 The translation lives in the **`castellano`** branch.
+
+Project thread on Whack a Hack! (in Spanish): **[Emerald Rogue EX v2.2.1a — Traducción al castellano](https://whackahack.com/foro/threads/emerald-rogue-ex-v2-2-1a-traduccion-al-castellano.69359/)**. Feel free to leave comments, suggestions or bug reports there.
 
 ### What is translated
 
