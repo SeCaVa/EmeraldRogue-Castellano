@@ -121,6 +121,8 @@ Si encuentras un texto sin traducir, cortado o con errores, abre una *issue* en 
 - **Fuente del logotipo de la traducción**: [Jost](https://fonts.google.com/specimen/Jost), de Owen Earl (licencia SIL Open Font License).
 - **Traducción al castellano**: SeCaVa, con ayuda de Claude (Anthropic).
 
+☕ Si quieres apoyar mi trabajo como traductor, puedes hacerlo en [Ko-fi](https://ko-fi.com/secava) o [GitHub Sponsors](https://github.com/sponsors/SeCaVa). Es totalmente voluntario: la traducción es y seguirá siendo gratis. Y si te gusta el juego, apoya también el proyecto original de Pokabbie.
+
 El README original del proyecto se conserva en [README_ORIGINAL.md](README_ORIGINAL.md).
 
 ---
@@ -226,6 +228,8 @@ If you find untranslated, cut-off or wrong text, please open an issue in this re
 - **Reference data**: [PokeAPI](https://pokeapi.co), [PkParaíso](https://pkparaiso.com) and [WikiDex](https://www.wikidex.net) for official Spanish names and descriptions; the Spanish release of Pokémon Emerald for short names, system messages and text graphics.
 - **Translation logo font**: [Jost](https://fonts.google.com/specimen/Jost) by Owen Earl (SIL Open Font License).
 - **Spanish translation**: SeCaVa, with help from Claude (Anthropic).
+
+☕ If you'd like to support my work as a translator, you can do so on [Ko-fi](https://ko-fi.com/secava) or [GitHub Sponsors](https://github.com/sponsors/SeCaVa). It's completely optional: the translation is and will always be free. And if you enjoy the game, please support Pokabbie's original project too.
 
 The project's original README is kept in [README_ORIGINAL.md](README_ORIGINAL.md).
 
