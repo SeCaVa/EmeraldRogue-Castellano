@@ -1183,6 +1183,36 @@ static void LoadBagItemListBuffers(u8 pocketId)
 }
 
 static const u8 sText_Revised[] = _("{REVISED_EDIT}");
+static const u8 sText_TMNameDot[] = _(".");
+
+// Translation: TM/TR names start after the icon and the number (x = 8 + 17 + number + 5)
+#define TM_NAME_X 40
+
+static bool32 TMPocket_ShowsQuantity(u16 itemId, u16 itemQuantity)
+{
+    return itemQuantity > 1 || (itemId >= ITEM_TR01 && itemId <= ITEM_TR50);
+}
+
+// Translation: long Spanish move names run into the quantity, so they are shortened with a dot ("Bruma Explo.")
+static void ShortenTMNameForQuantity(u8 *name, u16 itemQuantity)
+{
+    u8 quantity[16];
+    s32 maxWidth;
+    u32 len;
+
+    ConvertIntToDecimalStringN(gStringVar1, itemQuantity, STR_CONV_MODE_LEFT_ALIGN, BAG_ITEM_CAPACITY_DIGITS);
+    StringExpandPlaceholders(quantity, gText_xVar1);
+    maxWidth = 119 - GetStringWidth(FONT_NARROW, quantity, 0) - 2 - TM_NAME_X;
+    if (GetStringWidth(FONT_NARROW, name, 0) <= maxWidth)
+        return;
+
+    len = StringLength(name);
+    while (len > 1 && GetStringWidth(FONT_NARROW, name, 0) + GetStringWidth(FONT_NARROW, sText_TMNameDot, 0) > maxWidth)
+        name[--len] = EOS;
+    if (name[len - 1] == CHAR_SPACE)
+        name[--len] = EOS;
+    StringAppend(name, sText_TMNameDot);
+}
 
 static void GetItemName(u8 *dest, u16 itemId)
 {
@@ -1191,6 +1221,7 @@ static void GetItemName(u8 *dest, u16 itemId)
     case TMHM_POCKET:
         {
             u32 moveId = ItemIdToBattleMoveId(itemId);
+            u16 itemQuantity = CountTotalItemQuantityInBag(itemId);
             if(Rogue_HasMoveBeenRevised(moveId))
             {
                 StringCopy(gStringVar2, sText_Revised);
@@ -1200,6 +1231,9 @@ static void GetItemName(u8 *dest, u16 itemId)
             {
                 StringCopy(gStringVar2, gMoveNames[moveId]);
             }
+
+            if (TMPocket_ShowsQuantity(itemId, itemQuantity))
+                ShortenTMNameForQuantity(gStringVar2, itemQuantity);
 
             if (itemId >= ITEM_TR01)
             {
@@ -1302,10 +1336,10 @@ static void BagMenu_ItemPrintCallback(u8 windowId, u32 itemIndex, u8 y)
         else if(gBagPosition.pocket == TMHM_POCKET)
         {
             // Prefer not to print item quantity for regular TMs/HMs as they are infinite use
-            if(itemQuantity > 1 || (itemId >= ITEM_TR01 && itemId <= ITEM_TR50))
+            if(TMPocket_ShowsQuantity(itemId, itemQuantity))
             {
-                // Print item quantity
-                ConvertIntToDecimalStringN(gStringVar1, itemQuantity, STR_CONV_MODE_RIGHT_ALIGN, BAG_ITEM_CAPACITY_DIGITS);
+                // Print item quantity (Translation: left-aligned, so "×1" leaves more room for the name)
+                ConvertIntToDecimalStringN(gStringVar1, itemQuantity, STR_CONV_MODE_LEFT_ALIGN, BAG_ITEM_CAPACITY_DIGITS);
                 StringExpandPlaceholders(gStringVar4, gText_xVar1);
                 offset = GetStringRightAlignXOffset(FONT_NARROW, gStringVar4, 119);
                 BagMenu_Print(windowId, FONT_NARROW, gStringVar4, offset, y, 0, 0, TEXT_SKIP_DRAW, COLORID_NORMAL);

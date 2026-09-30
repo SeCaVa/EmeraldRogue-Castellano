@@ -310,7 +310,7 @@ script Rogue_Encounter_GameShow_WhosThatCryFlow
 
 script Rogue_Encounter_GameShow_VoltorbFlip
 {
-    msgbox(format("¡Voltorb Flip!\pHabrá 3 rondas y tendrás que conseguir todas las cartas de 2 y 3 del tablero sin levantar ningún Voltorb.\pY ahora…"), MSGBOX_DEFAULT)
+    msgbox(format("¡Giravoltorb!\pHabrá 3 rondas y tendrás que conseguir todas las cartas de 2 y 3 del tablero sin levantar ningún Voltorb.\pY ahora…"), MSGBOX_DEFAULT)
 
     setvar(VAR_VOLTORB_FLIP_LVL, 0)
 
