@@ -35,10 +35,6 @@ Hilo del proyecto en Whack a Hack!: **[Emerald Rogue EX v2.2.1a — Traducción 
   - Propios de Rogue, redibujados con su mismo estilo de letra: "PS" de la barra de vida, iconos de teratipo (LUCHA, VOLAD, FUEGO…), estados DOR y QUE del marcador de combate y botón "NOTAS" de Voltorb Flip.
   - Lo que no existe en Esmeralda se ha dibujado con las mismas letras: tipos HADA y ASTRAL, estado CGL (congelación), AMISTAD, "MISIONES" del libro de misiones y "A·ABRIR / SELECT·EDITAR" de la Pokédex de Rogue.
 
-### Pantalla de la traducción
-
-Al arrancar, después de la pantalla de @Pokabbie, aparecen dos pantallas de créditos de la traducción acompañadas de un jingle corto de campanas: primero el logotipo de SeCaVa (un eclipse con la "C" como eclipse en miniatura) y después "Traducido por SeCaVa". Se pueden saltar con A, B o START.
-
 ### Criterios de la traducción
 
 - **Castellano de España** y terminología oficial de los juegos.
@@ -159,10 +155,6 @@ Project thread on Whack a Hack! (in Spanish): **[Emerald Rogue EX v2.2.1a — Tr
 - **Character names** using their official Spanish (Spain) versions (e.g. Blasco, Máximo, Treto, Aria).
 - **Pokémon Emerald system text still used by Rogue**: saving, map interactions (rocks, trees, waterfalls, Surf, Dive), Pokémon Center, berries, PC, Repel, VS Seeker, Prof. Birch's introduction and Safari Zone prompts.
 - **Graphics containing text**, taken from the Spanish release of Pokémon Emerald so they look like the original game: "PULSA START", type and contest icons, TIPO / POTENC. / PRECIS. / EFECTO labels, status icons, summary screen, trainer card, PC box menu, naming screen buttons, the MT / DT / MO labels in the Bag, the trade screen and the inaccurate-emulator warning ("¡AVISO!"). Rogue's own graphics were redrawn in their original lettering: the "PS" (HP) label on the health bar, the Tera type icons, the DOR/QUE (sleep/burn) battle status labels and Voltorb Flip's "NOTAS" button. Graphics that don't exist in Emerald (Fairy and Stellar types, frostbite status, friendship label, the quest book title and the Rogue Pokédex hints) were drawn with the same lettering.
-
-### Translation screen
-
-At boot, after the @Pokabbie screen, two translation credit screens appear with a short bell jingle: first the SeCaVa logo (an eclipse, with the "C" as a small eclipse) and then "Traducido por SeCaVa". They can be skipped with A, B or START.
 
 ### Translation guidelines
 
