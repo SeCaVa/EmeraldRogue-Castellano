@@ -32,7 +32,7 @@ Hilo del proyecto en Whack a Hack!: **[Emerald Rogue EX v2.2.1a — Traducción 
   - Ficha de entrenador, menú de las cajas y botones del teclado de nombres.
   - Etiquetas MT, DT y MO del bolsillo de máquinas de la Mochila.
   - Pantalla de intercambio y aviso de emulador poco preciso ("¡AVISO!").
-  - Propios de Rogue, redibujados con su mismo estilo de letra: "PS" de la barra de vida, iconos de teratipo (LUCHA, VOLAD, FUEGO…), estados DOR y QUE del marcador de combate y botón "NOTAS" de Voltorb Flip.
+  - Propios de Rogue, redibujados con su mismo estilo de letra: "PS" de la barra de vida, iconos de teratipo (LUCHA, VOLAD, FUEGO…), estados DOR y QUE del marcador de combate y botón "NOTAS" de Giravoltorb.
   - Lo que no existe en Esmeralda se ha dibujado con las mismas letras: tipos HADA y ASTRAL, estado CGL (congelación), AMISTAD, "MISIONES" del libro de misiones y "A·ABRIR / SELECT·EDITAR" de la Pokédex de Rogue.
 
 ### Criterios de la traducción
