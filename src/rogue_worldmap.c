@@ -54,8 +54,8 @@ struct WorldMapData
 EWRAM_DATA static struct WorldMapData *sWorldMapData = NULL;
 EWRAM_DATA static u8 *sWorldMapTilemapPtr = NULL;
 
-static u8 const sText_BasicDesc[] = _("{STR_VAR_1}");
-static u8 const sText_TeleportDesc[] = _("{STR_VAR_1}\n{A_BUTTON}{FONT_SHORT} Teletransp.");
+static u8 const sText_BasicDesc[] = _("{FONT_NARROW}{STR_VAR_1}");
+static u8 const sText_TeleportDesc[] = _("{FONT_NARROW}{STR_VAR_1}\n{FONT_NORMAL}{A_BUTTON}{FONT_SHORT} Teletransp.");
 
 static void MainCB2(void);
 static void InitData();

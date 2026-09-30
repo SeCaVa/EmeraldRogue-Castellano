@@ -314,7 +314,7 @@
                 ]
             },
             {
-                "name": "One Last Quest…", "display_name": "Última Misión…",
+                "name": "One Last Quest…", "display_name": "Última Misión...",
                 "display_group": "final_quests",
                 "description": "Completa todas las demás Misiones Principales para desbloquear la 'Misión Final'.",
                 "flags": 
