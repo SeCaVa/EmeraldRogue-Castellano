@@ -103,7 +103,7 @@ const u8 gText_DifficultyModeActive[] = _("{COLOR LIGHT_BLUE}{SHADOW BLUE}¡Acti
 const u8 gText_DifficultyExpAll[] = _("Repartir Exp.");
 const u8 gText_DifficultyOverLvl[] = _("Sobrenivel");
 const u8 gText_DifficultyEVGain[] = _("Ganar EV");
-const u8 gText_DifficultyOverworldMons[] = _("{PKMN} salvajes visibles");
+const u8 gText_DifficultyOverworldMons[] = _("Ver {PKMN} salvajes");
 const u8 gText_DifficultyBagWipe[] = _("Nuevo comienzo");
 const u8 gText_DifficultySwitchMode[] = _("Modo cambio");
 
