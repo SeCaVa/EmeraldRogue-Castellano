@@ -14,7 +14,7 @@ gText_PlayerSavedGame::
 	.string "{PLAYER} guardó la partida.$"
 
 gText_DifferentSaveFile::
-	.string "¡ATENCIÓN!\p"
+	.string "¡Atención!\p"
 	.string "Ya hay otra partida guardada.\p"
 	.string "Si guardas ahora, perderás toda\n"
 	.string "la aventura de la otra partida,\l"

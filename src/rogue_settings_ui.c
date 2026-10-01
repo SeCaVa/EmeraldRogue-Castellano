@@ -256,7 +256,7 @@ const u8 sMenuNameDesc_ReleaseMonsOn[] = _(
 const u8 sMenuNameDesc_ReleaseMonsOff[] = _(
     "{COLOR GREEN}{SHADOW LIGHT_GREEN}"
     "Los {PKMN} debilitados siguen en tu equipo,\n"
-    "pero solo los reanima una Enfermera o Revivir."
+    "y solo los reaniman Enfermeras o Revivir."
 );
 static u8 const* const sMenuNameDesc_ReleaseMons[] = 
 {

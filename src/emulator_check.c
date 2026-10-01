@@ -130,7 +130,7 @@ static const u8 sText_AreYouSureMessage[] = _(
     "Estos errores NO se arreglarán y\n"
     "pueden afectar a tu partida.\n"
     "\n"
-    "Se recomienda ENCARECIDAMENTE usar\n"
+    "Se recomienda Encarecidamente usar\n"
     "uno de los emuladores recomendados."
 );
 static const u8 sText_BottomMessage[] = _("Pulsa START para seguir.");

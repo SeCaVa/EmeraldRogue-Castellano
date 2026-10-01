@@ -27,13 +27,13 @@ gText_WelcomeCutShort::
 
 gText_NoticesGoldCard::
 	.string "E-esa ficha…\n"
-	.string "¿Será… la FICHA DORADA?\p"
+	.string "¿Será… la Ficha Dorada?\p"
 	.string "¡Qué dorado tan brillante!\n"
 	.string "¡Las cuatro estrellas relucen!\p"
 	.string "He visto a varios Entrenadores con\n"
-	.string "la FICHA PLATEADA, pero, {PLAYER},\l"
+	.string "la Ficha Plateada, pero, {PLAYER},\l"
 	.string "eres {MASC}el primer Entrenador{FEM}la primera Entrenadora{ENDG}\l"
-	.string "que veo con la FICHA DORADA.\p"
+	.string "que veo con la Ficha Dorada.\p"
 	.string "Bien, {PLAYER}, permíteme el honor\n"
 	.string "de curar a tus Pokémon.$"
 
