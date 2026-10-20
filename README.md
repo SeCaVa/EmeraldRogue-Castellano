@@ -83,7 +83,7 @@ Si encuentras un texto sin traducir, cortado o con errores, abre una *issue* en 
 - **Datos de referencia**: [PokeAPI](https://pokeapi.co), [PkParaíso](https://pkparaiso.com) y [WikiDex](https://www.wikidex.net) para los nombres y las descripciones oficiales en castellano; Pokémon Edición Esmeralda en castellano para los nombres cortos, los mensajes de sistema y los gráficos con texto.
 - **Traducción al castellano**: SeCaVa.
 
-☕ Si quieres apoyar mi trabajo como traductor, puedes hacerlo en [Ko-fi](https://ko-fi.com/secava) o [GitHub Sponsors](https://github.com/sponsors/SeCaVa). Es totalmente voluntario: la traducción es y seguirá siendo gratis. Y si te gusta el juego, apoya también el proyecto original de Pokabbie.
+☕ Si quieres apoyar mi trabajo como traductor, puedes hacerlo en [Ko-fi](https://ko-fi.com/secava), [Patreon](https://www.patreon.com/secava) o [GitHub Sponsors](https://github.com/sponsors/SeCaVa). Es totalmente voluntario: la traducción es y seguirá siendo gratis. Y si te gusta el juego, apoya también el proyecto original de Pokabbie.
 
 ---
 
@@ -153,7 +153,7 @@ If you find untranslated, cut-off or wrong text, please open an issue in this re
 - **Reference data**: [PokeAPI](https://pokeapi.co), [PkParaíso](https://pkparaiso.com) and [WikiDex](https://www.wikidex.net) for official Spanish names and descriptions; the Spanish release of Pokémon Emerald for short names, system messages and text graphics.
 - **Spanish translation**: SeCaVa.
 
-☕ If you'd like to support my work as a translator, you can do so on [Ko-fi](https://ko-fi.com/secava) or [GitHub Sponsors](https://github.com/sponsors/SeCaVa). It's completely optional: the translation is and will always be free. And if you enjoy the game, please support Pokabbie's original project too.
+☕ If you'd like to support my work as a translator, you can do so on [Ko-fi](https://ko-fi.com/secava), [Patreon](https://www.patreon.com/secava) or [GitHub Sponsors](https://github.com/sponsors/SeCaVa). It's completely optional: the translation is and will always be free. And if you enjoy the game, please support Pokabbie's original project too.
 
 ### Legal notice
 
