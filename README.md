@@ -71,7 +71,8 @@ Este repositorio solo contiene el parche **`emeraldrogue_ex_es.ups`**. Descárga
 - **Funciones de Pokémon Esmeralda que Rogue no usa**: Sala Unión, Regalo Misterioso, PokéNav, televisión, Frente Batalla y Pase Frontera, Pokédex original, casino, concursos, caja de Pokécubos, Tritura Bayas, decoraciones de la base secreta y los mapas originales de la Zona Safari (textos y gráficos).
 - **Logotipos**: el logotipo del título, el de pokeemerald-expansion y el de la Pokédex se dejan como en el original.
 
-Si encuentras un texto sin traducir, cortado o con errores, abre una *issue* en este repositorio.
+Si encuentras un texto sin traducir, cortado o con errores, rellena el [formulario de fallos](https://github.com/SeCaVa/EmeraldRogue-Castellano/issues/new?template=fallo.yml).
+Pide versión, emulador, zona y captura, y así puedo arreglarlo sin preguntarte nada más.
 
 ---
 
@@ -143,7 +144,8 @@ This repository only contains the **`emeraldrogue_ex_es.ups`** patch. Download i
 - **Pokémon Emerald features Rogue doesn't use**: Union Room, Mystery Gift, PokéNav, TV, Battle Frontier and Frontier Pass, the original Pokédex, Game Corner, contests, Pokéblock case, Berry Crush, secret base decorations and the original Safari Zone maps (text and graphics).
 - **Logos**: the title screen, pokeemerald-expansion and Pokédex logos are left as in the original.
 
-If you find untranslated, cut-off or wrong text, please open an issue in this repository.
+If you find untranslated, cut-off or wrong text, please fill in the [bug report form](https://github.com/SeCaVa/EmeraldRogue-Castellano/issues/new?template=fallo.yml).
+It asks for the version, emulator, location and a screenshot.
 
 ### Credits
 
