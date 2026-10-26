@@ -21,7 +21,7 @@ Hilo del proyecto en Whack a Hack!: **[Emerald Rogue EX v2.2.1a — Traducción 
 - **Decoraciones de la casa**: nombres de las decoraciones, de sus variantes y de sus grupos.
 - **Créditos finales**, con su sección de la traducción, y el cartel del final: "¿FIN?" (o "FIN" con todas las misiones completas), dibujado con las mismas piezas que el "THE END?" original.
 - **Nombres de personajes** con su versión oficial en España (por ejemplo, Blasco, Máximo, Treto o Aria).
-- **Textos de sistema de Pokémon Esmeralda que Rogue sigue usando**: guardar partida, interacciones del mapa (rocas, árboles, cascadas, Surf, Buceo), Centro Pokémon, bayas, PC, Repelente, Buscapelea, la presentación del Prof. Abedul y los avisos de la Zona Safari.
+- **Textos de sistema de Pokémon Esmeralda que Rogue sigue usando**: guardar partida, interacciones del mapa (rocas, árboles, cascadas, Surf, Buceo), Centro Pokémon, bayas, PC, Repelente, Buscapelea, la presentación del Prof. Abedul y la Zona Safari (avisos, encargados y visitantes).
 - **Gráficos con texto**, tomados de Pokémon Edición Esmeralda en castellano para que se vean igual que en el juego original:
   - "PULSA START" de la pantalla de título.
   - Iconos de tipos y de categorías de concurso, y etiquetas TIPO / POTENC. / PRECIS. / EFECTO.
@@ -60,7 +60,7 @@ Este repositorio solo contiene el parche **`emeraldrogue_ex_es.bps`** (y el mism
    - CRC32: `1F1C08FB`
    - Si el CRC32 no coincide (Esmeralda española, otra región o una ROM ya parcheada), el juego no funcionará bien.
 2. Aplica `emeraldrogue_ex_es.bps` con [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) u otro programa compatible con parches BPS. El BPS comprueba que la ROM es la correcta antes de parchear.
-3. Juega la ROM resultante (CRC32 `67ACE003`) en un emulador preciso (por ejemplo, mGBA) o en una consola.
+3. Juega la ROM resultante (CRC32 `0229524B`) en un emulador preciso (por ejemplo, mGBA) o en una consola.
 
 **Este repositorio no incluye ninguna ROM.**
 
@@ -69,7 +69,7 @@ Este repositorio solo contiene el parche **`emeraldrogue_ex_es.bps`** (y el mism
 ## Qué no está traducido
 
 - **Entradas de la Pokédex**: Emerald Rogue no las incluye en la ROM.
-- **Funciones de Pokémon Esmeralda que Rogue no usa**: Sala Unión, Regalo Misterioso, PokéNav, televisión, Frente Batalla y Pase Frontera, Pokédex original, casino, concursos, caja de Pokécubos, Tritura Bayas, decoraciones de la base secreta y los mapas originales de la Zona Safari (textos y gráficos).
+- **Funciones de Pokémon Esmeralda que Rogue no usa**: Sala Unión, Regalo Misterioso, PokéNav, televisión, Frente Batalla y Pase Frontera, Pokédex original, casino, concursos, caja de Pokécubos, Tritura Bayas, decoraciones de la base secreta y los gráficos originales de la Zona Safari.
 - **Logotipos**: el logotipo del título, el de pokeemerald-expansion y el de la Pokédex se dejan como en el original.
 
 Si encuentras un texto sin traducir, cortado o con errores, rellena el [formulario de fallos](https://github.com/SeCaVa/EmeraldRogue-Castellano/issues/new?template=fallo.yml).
@@ -115,7 +115,7 @@ Project thread on Whack a Hack! (in Spanish): **[Emerald Rogue EX v2.2.1a — Tr
 - **Home decorations**: decoration, variant and group names.
 - **End credits**, with a translation section, and the closing card: "¿FIN?" (or "FIN" once every quest is complete), built from the same tiles as the original "THE END?".
 - **Character names** using their official Spanish (Spain) versions (e.g. Blasco, Máximo, Treto, Aria).
-- **Pokémon Emerald system text still used by Rogue**: saving, map interactions (rocks, trees, waterfalls, Surf, Dive), Pokémon Center, berries, PC, Repel, VS Seeker, Prof. Birch's introduction and Safari Zone prompts.
+- **Pokémon Emerald system text still used by Rogue**: saving, map interactions (rocks, trees, waterfalls, Surf, Dive), Pokémon Center, berries, PC, Repel, VS Seeker, Prof. Birch’s introduction and the Safari Zone (prompts, attendants and visitors).
 - **Graphics containing text**, taken from the Spanish release of Pokémon Emerald so they look like the original game: "PULSA START", type and contest icons, TIPO / POTENC. / PRECIS. / EFECTO labels, status icons, summary screen, trainer card, PC box menu, naming screen buttons, the MT / DT / MO labels in the Bag, the trade screen and the inaccurate-emulator warning ("¡AVISO!"). Rogue's own graphics were redrawn in their original lettering: the "PS" (HP) label on the health bar, the Tera type icons, the DOR/QUE (sleep/burn) battle status labels and Voltorb Flip's "NOTAS" button. Graphics that don't exist in Emerald (Fairy and Stellar types, frostbite status, friendship label, the quest book title and the Rogue Pokédex hints) were drawn with the same lettering.
 
 ### Translation guidelines
@@ -136,14 +136,14 @@ This repository only contains the **`emeraldrogue_ex_es.bps`** patch (and the sa
    - CRC32: `1F1C08FB`
    - If the CRC32 doesn't match (Spanish Emerald, another region or an already patched ROM), the game won't work properly.
 2. Apply `emeraldrogue_ex_es.bps` with [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) or any other BPS patcher. BPS checks that the ROM is the right one before patching.
-3. Play the patched ROM (CRC32 `67ACE003`) on an accurate emulator (e.g. mGBA) or on hardware.
+3. Play the patched ROM (CRC32 `0229524B`) on an accurate emulator (e.g. mGBA) or on hardware.
 
 **This repository contains no ROMs.**
 
 ### Not translated
 
 - **Pokédex entries**: Emerald Rogue doesn't include them in the ROM.
-- **Pokémon Emerald features Rogue doesn't use**: Union Room, Mystery Gift, PokéNav, TV, Battle Frontier and Frontier Pass, the original Pokédex, Game Corner, contests, Pokéblock case, Berry Crush, secret base decorations and the original Safari Zone maps (text and graphics).
+- **Pokémon Emerald features Rogue doesn't use**: Union Room, Mystery Gift, PokéNav, TV, Battle Frontier and Frontier Pass, the original Pokédex, Game Corner, contests, Pokéblock case, Berry Crush, secret base decorations and the original Safari Zone graphics.
 - **Logos**: the title screen, pokeemerald-expansion and Pokédex logos are left as in the original.
 
 If you find untranslated, cut-off or wrong text, please fill in the [bug report form](https://github.com/SeCaVa/EmeraldRogue-Castellano/issues/new?template=fallo.yml).
