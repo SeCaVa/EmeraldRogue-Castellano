@@ -54,7 +54,7 @@ Hilo del proyecto en Whack a Hack!: **[Emerald Rogue EX v2.2.1a — Traducción 
 
 ## Cómo jugar
 
-Este repositorio solo contiene el parche **`emeraldrogue_ex_es.bps`** (y el mismo parche en formato `.ups`, para quien ya lo usaba). Descárgalo desde la sección [Releases](https://github.com/SeCaVa/EmeraldRogue-Castellano/releases/latest).
+Este repositorio solo contiene el parche **`emeraldrogue_ex_es.bps`**. Descárgalo desde la sección [Releases](https://github.com/SeCaVa/EmeraldRogue-Castellano/releases/latest).
 
 1. Consigue tu propia ROM de **Pokémon Emerald (USA, Europe)** (la versión inglesa, no la española).
    - CRC32: `1F1C08FB`
@@ -130,7 +130,7 @@ Project thread on Whack a Hack! (in Spanish): **[Emerald Rogue EX v2.2.1a — Tr
 
 ### How to play
 
-This repository only contains the **`emeraldrogue_ex_es.bps`** patch (and the same patch as `.ups`, for those already using it). Download it from [Releases](https://github.com/SeCaVa/EmeraldRogue-Castellano/releases/latest).
+This repository only contains the **`emeraldrogue_ex_es.bps`** patch. Download it from [Releases](https://github.com/SeCaVa/EmeraldRogue-Castellano/releases/latest).
 
 1. Get your own **Pokémon Emerald (USA, Europe)** ROM (the English release, not the Spanish one).
    - CRC32: `1F1C08FB`
