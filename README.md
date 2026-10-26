@@ -54,12 +54,13 @@ Hilo del proyecto en Whack a Hack!: **[Emerald Rogue EX v2.2.1a — Traducción 
 
 ## Cómo jugar
 
-Este repositorio solo contiene el parche **`emeraldrogue_ex_es.ups`**. Descárgalo desde la sección [Releases](https://github.com/SeCaVa/EmeraldRogue-Castellano/releases/latest).
+Este repositorio solo contiene el parche **`emeraldrogue_ex_es.bps`** (y el mismo parche en formato `.ups`, para quien ya lo usaba). Descárgalo desde la sección [Releases](https://github.com/SeCaVa/EmeraldRogue-Castellano/releases/latest).
 
 1. Consigue tu propia ROM de **Pokémon Emerald (USA, Europe)** (la versión inglesa, no la española).
    - CRC32: `1F1C08FB`
-2. Aplica el parche con [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) u otro programa compatible con parches UPS.
-3. Juega la ROM resultante en un emulador preciso (por ejemplo, mGBA) o en una consola.
+   - Si el CRC32 no coincide (Esmeralda española, otra región o una ROM ya parcheada), el juego no funcionará bien.
+2. Aplica `emeraldrogue_ex_es.bps` con [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) u otro programa compatible con parches BPS. El BPS comprueba que la ROM es la correcta antes de parchear.
+3. Juega la ROM resultante (CRC32 `67ACE003`) en un emulador preciso (por ejemplo, mGBA) o en una consola.
 
 **Este repositorio no incluye ninguna ROM.**
 
@@ -129,12 +130,13 @@ Project thread on Whack a Hack! (in Spanish): **[Emerald Rogue EX v2.2.1a — Tr
 
 ### How to play
 
-This repository only contains the **`emeraldrogue_ex_es.ups`** patch. Download it from [Releases](https://github.com/SeCaVa/EmeraldRogue-Castellano/releases/latest).
+This repository only contains the **`emeraldrogue_ex_es.bps`** patch (and the same patch as `.ups`, for those already using it). Download it from [Releases](https://github.com/SeCaVa/EmeraldRogue-Castellano/releases/latest).
 
 1. Get your own **Pokémon Emerald (USA, Europe)** ROM (the English release, not the Spanish one).
    - CRC32: `1F1C08FB`
-2. Apply the patch with [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) or any other UPS patcher.
-3. Play the patched ROM on an accurate emulator (e.g. mGBA) or on hardware.
+   - If the CRC32 doesn't match (Spanish Emerald, another region or an already patched ROM), the game won't work properly.
+2. Apply `emeraldrogue_ex_es.bps` with [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) or any other BPS patcher. BPS checks that the ROM is the right one before patching.
+3. Play the patched ROM (CRC32 `67ACE003`) on an accurate emulator (e.g. mGBA) or on hardware.
 
 **This repository contains no ROMs.**
 

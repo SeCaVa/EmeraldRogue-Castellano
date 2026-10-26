@@ -44,6 +44,12 @@ body:
     validations:
       required: true
   - type: input
+    id: crc_base
+    attributes:
+      label: CRC32 de tu ROM antes de parchear (si lo sabes)
+      description: "Debe ser 1F1C08FB: Emerald USA/Europe en inglés. Con la Esmeralda española o una ROM ya parcheada no funciona bien. El parcheador web y Rom Patcher JS lo enseñan al cargar la ROM."
+      placeholder: "1F1C08FB"
+  - type: input
     id: crc
     attributes:
       label: CRC32 de tu ROM parcheada (si lo sabes)
