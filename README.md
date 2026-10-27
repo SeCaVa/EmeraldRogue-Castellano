@@ -60,7 +60,7 @@ Este repositorio solo contiene el parche **`emeraldrogue_ex_es.bps`**. Descárga
    - CRC32: `1F1C08FB`
    - Si el CRC32 no coincide (Esmeralda española, otra región o una ROM ya parcheada), el juego no funcionará bien.
 2. Aplica `emeraldrogue_ex_es.bps` con [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) u otro programa compatible con parches BPS. El BPS comprueba que la ROM es la correcta antes de parchear.
-3. Juega la ROM resultante (CRC32 `3887CA58`) en un emulador preciso (por ejemplo, mGBA) o en una consola.
+3. Juega la ROM resultante (CRC32 `91C4B0FA`) en un emulador preciso (por ejemplo, mGBA) o en una consola.
 
 **Este repositorio no incluye ninguna ROM.**
 
@@ -136,7 +136,7 @@ This repository only contains the **`emeraldrogue_ex_es.bps`** patch. Download i
    - CRC32: `1F1C08FB`
    - If the CRC32 doesn't match (Spanish Emerald, another region or an already patched ROM), the game won't work properly.
 2. Apply `emeraldrogue_ex_es.bps` with [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) or any other BPS patcher. BPS checks that the ROM is the right one before patching.
-3. Play the patched ROM (CRC32 `3887CA58`) on an accurate emulator (e.g. mGBA) or on hardware.
+3. Play the patched ROM (CRC32 `91C4B0FA`) on an accurate emulator (e.g. mGBA) or on hardware.
 
 **This repository contains no ROMs.**
 
